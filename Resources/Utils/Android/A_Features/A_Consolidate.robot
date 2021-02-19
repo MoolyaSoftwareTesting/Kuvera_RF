@@ -14,16 +14,6 @@ Verify Android PreLogin Consolidate Page
     Verify Page Contains Element On Android  ${KU_A_feature_CD_imgIcon}
     Verify Set A Goal Section
     Verify Save Tax Section
-    Swipe By Percent  85  85  30  30  900
-    Sleep  2s
-    Log Source  loglevel=INFO
-    Swipe By Percent  85  85  30  30  900
-    Sleep  2s
-    Log Source  loglevel=INFO
-    Swipe By Percent  85  85  30  30  900
-    Sleep  2s
-    Log Source  loglevel=INFO
-
 
 
 Verify Set A Goal Section
@@ -31,7 +21,7 @@ Verify Set A Goal Section
     Verify Text On Page  ${e_feature_CD_makeYourGoalsReality}  
     Verify Text On Page  ${e_feature_CD_makeYourGoalsDesc} 
     Verify Page Contains Element On Android  ${KU_A_feature_CD_goalBasedInvestinglink}
-    Sleep  2s
+    Sleep  1s
     Wait And Click Element On Android  ${KU_A_feature_CD_goalBasedInvestinglink}
     Verify Text On Page  ${e_feature_CD_goalBasedLinkTitle}
     Go Back
@@ -41,12 +31,14 @@ Verify Set A Goal Section
     Go Back
 
 Verify Save Tax Section
-    Swipe By Percent  70  70  20  20  5000
+    Swipe By Percent  85  85  30  30  9000
     Verify Page Contains Element On Android  ${KU_A_feature_CD_saveTaxImg}
     Verify Text On Page  ${e_feature_CD_taxSaverOptions} 
     Verify Text On Page  ${e_feature_CD_saveOnTax}
     Verify Text On Page  ${e_feature_CD_saveOnTaxDesc}
     Verify Page Contains Element On Android  ${KU_A_feature_CD_whyELSSLink} 
+    Sleep  1s
+    # Click Element At Coordinates  467  1086
     Wait And Click Element On Android  ${KU_A_feature_CD_whyELSSLink} 
     Verify Text On Page  ${e_feature_CD_whyELSSLinkTitle}
     Go Back

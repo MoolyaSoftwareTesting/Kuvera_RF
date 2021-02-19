@@ -30,5 +30,4 @@ Header Navigation Verification on Android
 # All Menu Navigation under Features
 Features Header Navigation Verification on Android
     [Tags]  TC03
-    # PreLogin Feature Sub Header Navigation On Android
-    Verify Android PreLogin Consolidate Page
+    PreLogin Feature Sub Header Navigation On Android
