@@ -15,6 +15,7 @@ Verify PreLogin Landing Page Widgets
     Verify SaveSmart Widgets
     Verify Widgets And Title  ${KU_A_goldLabel}  ${e_goldLabel}  ${KU_A_goldTitle}  ${e_goldTitle}
     Verify Gold Widgets
+    Sleep  1s
     Verify Mutual Fund Widgets
 
 PreLogin Header Navigation On Android
@@ -70,14 +71,17 @@ Verify Mutual Fund Widgets
     Wait And Verify Element And Text On Android  ${KU_A_MF_1YLabel}  ${e_MF_1YLabel}
     Wait And Verify Element And Text On Android  ${KU_A_MF_3YLabel}  ${e_MF_3YLabel}
     Verify Watchlist Button
-    Swipe By Percent  70  70  20  20  7000
+    Swipe By Percent  85  85  30  30  9000
     Wait For Element Visibility On Android  ${KU_A_MF_exploreMFBtn}
     Verify Page Contains Element On Android  ${KU_A_MF_exploreMFBtn}
     Verify Presence Of Bot Button  ${KU_A_faqBotBtn} 
     Click On Explore Button And Verify Navigated Page  ${KU_A_MF_exploreMFBtn}  ${KU_A_MF_allFundsLabel}  ${e_MF_allFundsLabel}
     Swipe By Percent  85  85  30  30  9000
+    Swipe By Percent  50  50  20  20  9000
     Verify Text On Page  ${e_investYourWayTitle}
     Verify Text On Page  ${e_oneLoginTitle}
+    Swipe By Percent  30  30  85  85  5000
+    Swipe By Percent  30  30  85  85  5000
     
 Verify Stock Widgets
     Log To Console  Stocks
@@ -119,10 +123,7 @@ Verify SaveSmart Widgets
     Log To Console  SaveSmart 
     Wait And Verify Element And Text On Android  ${KU_A_savesmartSubTitle}  ${e_savesmartSubTitle}
     Swipe By Percent  50  50  20  20  900
-    Wait And Verify Element And Text On Android  ${KU_A_SS_startSaveSmart}  ${e_SS_startSaveSmart}
-    Input Text  ${KU_A_inputField}  ${e_SS_amount}
-    Wait And Click Element On Android  ${KU_A_button}
-    Verify Login Page On Android App
+    Verify Start SaveSmart Today  ${KU_A_inputField}
     Wait And Click Element On Android  ${KU_A_savesmartLabel}
     Sleep  2s
     Swipe By Percent  85  85  30  30  900
@@ -184,3 +185,11 @@ Click On Explore Button And Verify Navigated Page
     Sleep  1s
     Wait And Verify Element And Text On Android  ${allStock_fundTab}  ${allStock_fundText}
     Wait And Click Element On Android  ${KU_A_logo}
+
+Verify Start SaveSmart Today
+    [Arguments]  ${inputField}
+    Wait And Verify Element And Text On Android  ${KU_A_SS_startSaveSmart}  ${e_SS_startSaveSmart}
+    Sleep  1s
+    Input Text  ${inputField}  ${e_SS_amount}
+    Wait And Click Element On Android  ${KU_A_button}
+    Verify Login Page On Android App

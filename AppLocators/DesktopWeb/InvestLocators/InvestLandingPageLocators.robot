@@ -31,20 +31,19 @@ ${e_invest_52WHighUSTitleText} =   52 wk high US
 ${e_invest_52WHighUSSubTitleText} =  Momentum stocks in US
 ${e_invest_healthPremiumTitleText} =  Get ₹50L health cover starting at ₹900 p.m. T&C apply
 ${e_invest_checkPremiumSubText} =  Check premium     
-${e_invest_mf_titleText} =  Mutual\nfunds
+${e_invest_mf_titleText} =  MF
 ${e_invest_searchBarText} =  Search funds 
-${e_invest_digGold} =  Digital\ngold
+${e_invest_digGold} =  Digi gold
 ${e_invest_stocks} =  Stocks
 ${e_invest_stocks_screenText} =  Search stocks
-${e_invest_USStocks} =  US\nstocks
-${e_invest_saveSmart} =   Save\nsmart
-${e_invest_amazonSave_titleText} =  Amazon\nsave
+${e_invest_USStocks} =  US stocks
+${e_invest_saveSmart} =   SaveSmart
 ${e_invest_amazonSave_screenText} =  4 simple steps to qualify for 3% extra for your shopping on Amazon.in
 ${e_invest_sortBtnText} =  Sort by				
 ${e_invest_filterBtnText} =  Filter
 ${e_invest_clearAllBtnTxt} =  Clear all
 ${e_invest_stock_searchBarTxt} =  Search stocks
-${e_invest_stock_exploreMoreTxt} =  Explore more
+${e_invest_stock_exploreTxt} =  Explore
 ${e_invest__funds_sortYearText} =  3Y
 ${e_invest__stocks_sortYearText} =  1D
 ${e_invest__52WHighLow_UTF_sortYearText} =  1Y
@@ -94,14 +93,14 @@ ${KU_W_52WHighUSSubTitle} =  xpath=(//div[@class='k-cls b-invest-card']/p)[9]
 ${KU_W_52WHighUS_screenText} =  xpath=//div[@class='disable-browser-text-select b-standard-tab__item b-standard-tab__item--active b-standard-tab__item--52-week-high']
 ${KU_W_healthPremiumTitle} =  xpath=//div[@class='b-invest-landing__other-container']//div[1]/p
 ${KU_W_checkPremiumBtn} =  xpath=//h6[contains(.,'Check premium')]
-${KU_W_mutualFund} =  xpath=(//div[@class='b-asset-cta__title'])[1]
+${KU_W_mutualFund} =  xpath=//div[contains(text(),'MF')]
 ${KU_W_mutualFundScreen} =  xpath=(//div[@class='b-explore-fund__action-title'])[1]
-${KU_W_digitalGold} =  xpath=(//*[contains(text(),'Digital')])[2]
+${KU_W_digitalGold} =  xpath=//div[contains(text(),'Digi gold')]
 ${KU_W_digitalGoldScreen} =  xpath=(//div[@class='b-asset-cta__title'])[3]
 ${KU_W_stocks} =  xpath=(//*[contains(text(),'Stocks')])[2]
 ${KU_W_stocksScreen} =  xpath=(//div[@class='b-explore-stock__action-title'])[1]
-${KU_W_USStocks} =  xpath=(//div[@class='b-asset-cta__title'])[5]  
-${KU_W_saveSmart} =  xpath=(//div[@class='b-asset-cta__title'])[6]
+${KU_W_USStocks} =  xpath=//div[contains(text(),'US stocks')]  
+${KU_W_saveSmart} =  xpath=//div[contains(text(),'SaveSmart')]
 ${KU_W_amazonSaveScreen} =  xpath=//div[@class='b-festive-fund-no-investment__text']
 ${KU_W_invest_sortYear} =  xpath=//div[@class='default-message']
 ${KU_W_stockAnd52WIndia_searchBar} =  xpath=(//div[@class='b-explore-stock__action-title'])[1]
@@ -116,7 +115,7 @@ ${KU_W_filter} =  xpath=//span[@class='b-explore-fund__action-title b-explore-fu
 ${KU_W_filterText_52WIndia} =  xpath=//span[@class='b-explore-stock__action-title b-explore-stock__filter-action-title']
 ${KU_W_filterText_UTFAnd52WkHighUS} =  xpath=//div[@class='b-action-bar__filter__header__label']
 ${KU_W_clearAll} =  xpath=//div[@class='b-explore-fund__clear-all']
-${KU_W_exploreMoreTitle} =  xpath=//div[@class='b-explore-assets__subheading']
+${KU_W_exploreTitle} =  xpath=//div[contains(text(),'Explore')]
 ${KU_W_invest_filteredFund} =  xpath=(//div[@class='b-mutual-funds-explore__fund-row-industry'])[1]
 ${KU_W_invest_watchListBtn} =  xpath=(//div[@class='b-mutual-funds-explore__fund-row-watchlist'])[1]
 ${KU_W_invest_watchlistHeader} =  xpath=//div[@class='b-mutual-funds-watchlist-tab__not-logged-in--text']

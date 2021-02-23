@@ -19,9 +19,9 @@ Verify Android PreLogin Loans Page
     Verify Login Page On Android App
     Sleep  3s
     Navigate To Hamburger Menu  ${KU_A_loansLink}  ${e_loansLink}
+    Sleep  1s
     Swipe By Percent  70  70  30  30  900
-    Verify Affordable Loan Section
-    
+    Verify Affordable Loan Section  
     Verify Loan Calculator
     Verify Presence Of Bot Button  ${KU_A_faqBotBtn}
     Swipe By Percent  30  30  85  85  5000
@@ -41,6 +41,8 @@ Verify Loan Calculator
     Wait And Verify Element And Text On Android  ${KU_A_inputField}  ${e_loans_savingAmt}
     # Loan Against Portfolio
     Log To Console  Title And Text Validation
+    Sleep  2s
+    Swipe By Percent  70  70  30  30  900
     Wait And Verify Element And Text On Android  ${KU_A_loans_portfolioTitle}  ${e_loans_portfolioTitle}
     Wait And Verify Element And Text On Android  ${KU_A_loans_monthlyEMI}  ${e_loans_monthlyEMI} 
     Wait And Verify Element And Text On Android  ${KU_A_loans_interest}  ${e_loans_interest} 

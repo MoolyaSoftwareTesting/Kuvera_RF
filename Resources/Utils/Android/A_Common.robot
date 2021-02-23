@@ -5,6 +5,9 @@ Library     JsonValidator
 Library     AppiumLibrary
 Resource   ../../../AppLocators/Android/A_CommonAppLocators.robot
 Resource   ../../../AppLocators/Android/A_MenuNavigationLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_InvestLandingPageLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_SaveSmartLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_GiltFundsLocators.robot
 
 *** Keywords ***
 
@@ -120,6 +123,10 @@ Verify Login Page On Android App
     Wait And Verify Element And Text On Android  ${KU_A_loginTitle}  ${e_loginTitle}
     Wait And Click Element On Android  ${KU_A_logo}
 
+Verify Login Page From Invest 
+    Wait And Verify Element And Text On Android  ${KU_A_loginTitle}  ${e_loginTitle}
+    Go Back
+
 Verify Widgets And Title
     [Arguments]  ${label}  ${labelText}  ${title}  ${titleText}
     Wait And Verify Element And Text On Android  ${label}  ${labelText}
@@ -128,12 +135,12 @@ Verify Widgets And Title
 
 Wait Until Page Contains Text
     [Arguments]  ${text}
-    Page Should Contain Text  ${text}
+    Run Keyword And Continue On Failure  Page Should Contain Text  ${text}
 
 Verify Text On Page
     [Arguments]  ${text}
     Wait Until Page Contains  ${text}  timeout=30
-    Page Should Contain Text  ${text}
+    Run Keyword And Continue On Failure  Page Should Contain Text  ${text}
    
 Quit Kuvera Application
     Quit Application

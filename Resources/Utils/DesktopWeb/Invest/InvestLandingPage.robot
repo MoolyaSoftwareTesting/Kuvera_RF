@@ -93,8 +93,8 @@ Verify PreLogin Invest Tiles
     Verify Element And Text  ${KU_W_52WHighUSSubTitle}  ${e_invest_52WHighUSSubTitleText}
     Verify PreLogin 52WkHigh US Landing Page
     # Explore More
-    Scroll Untill View  ${KU_W_exploreMoreTitle}
-    Verify Element And Text  ${KU_W_exploreMoreTitle}  ${e_invest_stock_exploreMoreTxt}
+    Scroll Untill View  ${KU_W_exploreTitle}
+    Verify Element And Text  ${KU_W_exploreTitle}  ${e_invest_stock_exploreTxt}
     
 
 Navigate To Invest Page And Verify Explore Options

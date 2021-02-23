@@ -30,4 +30,15 @@ Header Navigation Verification on Android
 # All Menu Navigation under Features
 Features Header Navigation Verification on Android
     [Tags]  TC03
-    PreLogin Feature Sub Header Navigation On Android
+    # PreLogin Feature Sub Header Navigation On Android
+    Verify Android PreLogin Consolidate Page
+
+# Invest Menu Navigation
+Invest Navigation Verification on Android
+    [Tags]  TC04
+    Verify Android PreLogin Invest Tiles
+
+# SaveSmart Menu Navigation Under Invest
+SaveSmart Navigation Verification on Android
+    [Tags]  TC05
+    Verify Android PreLogin SaveSmart Page
