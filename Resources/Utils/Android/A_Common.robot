@@ -123,7 +123,7 @@ Verify Login Page On Android App
     Wait And Verify Element And Text On Android  ${KU_A_loginTitle}  ${e_loginTitle}
     Wait And Click Element On Android  ${KU_A_logo}
 
-Verify Login Page From Invest 
+Verify Login Page And Go Back 
     Wait And Verify Element And Text On Android  ${KU_A_loginTitle}  ${e_loginTitle}
     Go Back
 

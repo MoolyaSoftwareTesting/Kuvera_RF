@@ -56,14 +56,14 @@ Verify Import Tag
     Verify Text On Page  ${e_invest_importTagTitle}
     Verify Page Contains Element On Android  ${KU_A_invest_importNowBtn}
     Wait And Click Element On Android  ${KU_A_invest_importNowBtn}
-    Verify Login Page From Invest 
+    Verify Login Page And Go Back 
 
 Verify Navigation To Tabs For Funds
     # WatchList
     Wait And Click Element On Android  ${KU_A_watchListBtn}
     Verify Text On Page  ${e_invest_watchlistTitle}
     Wait And Click Element On Android  ${KU_A_invest_loginBtn}
-    Verify Login Page From Invest 
+    Verify Login Page And Go Back 
     Wait And Click Element On Android  ${KU_A_signupLink}
     Verify Signup Page On Android App
     Go Back

@@ -21,18 +21,17 @@ Suite Teardown  Quit Kuvera Application
 Landing Page Widgets Verification on Android
     [Tags]  TC01 
     Verify PreLogin Landing Page Widgets
-
+    
 # Header Navigation on Android - Insure , Loans, Remit
 Header Navigation Verification on Android
     [Tags]  TC02
     PreLogin Header Navigation On Android
-
+    
 # All Menu Navigation under Features
 Features Header Navigation Verification on Android
     [Tags]  TC03
-    # PreLogin Feature Sub Header Navigation On Android
-    Verify Android PreLogin Consolidate Page
-
+    PreLogin Feature Sub Header Navigation On Android
+    
 # Invest Menu Navigation
 Invest Navigation Verification on Android
     [Tags]  TC04
@@ -42,3 +41,18 @@ Invest Navigation Verification on Android
 SaveSmart Navigation Verification on Android
     [Tags]  TC05
     Verify Android PreLogin SaveSmart Page
+
+# All Menu Navigation under Features
+Features Header Navigation Verification on Android
+    [Tags]  TC06
+    Verify Android PreLogin Tax Harvesting Page
+
+# All Menu Navigation under Features
+Features Header Navigation Verification on Android
+    [Tags]  TC07
+    Verify Android PreLogin Save Taxes Page
+
+# All Menu Navigation under Features
+Features Header Navigation Verification on Android
+    [Tags]  TC08
+    Verify Android PreLogin Consolidate Page

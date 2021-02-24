@@ -41,3 +41,5 @@ Verify Details Of Top Rated Tax
     Verify Text On Page  ${e_MF_1YLabel}
     Verify Text On Page  ${e_MF_3YLabel}
     Verify Page Contains Element On Android  ${KU_A_watchListBtn}
+    Wait And Click Element On Android  ${KU_A_watchListBtn}
+    Verify Login Page And Go Back  

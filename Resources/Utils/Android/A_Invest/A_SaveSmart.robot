@@ -9,8 +9,8 @@ Verify Android PreLogin SaveSmart Page
     Click On SaveSmart From Explore More
     Verify Title And SubTitle Of SaveSmart
     Verify Signup Link And Kuvera Logo
-    Verify Start SaveSmart Today  ${KU_A_invest_SS_minimumAmt}
-    Click On SaveSmart From Explore More
+    Verify Start SaveSmart Today  ${KU_A_invest_SS_amountField}
+    Verify Login Page And Go Back 
     Verify Return Calculator
     Verify Presence Of Bot Button  ${KU_A_faqBotBtn} 
 
@@ -19,13 +19,12 @@ Verify Return Calculator
     Verify Text On Page  ${e_invest_SS_notYourDadSavings}
     Verify Text On Page  ${e_invest_SS_smallAlternativeToSavings}
     Verify Text On Page  ${e_invest_SS_enterAmtToCheckReturns}
+    Clear Text  ${KU_A_invest_SS_amountField}
+    Input Text  ${KU_A_invest_SS_amountField}  ${e_invest_SS_amt}
     Verify Text On Page  ${e_invest_SS_saveSmartLabel}
     Verify Text On Page  ${e_invest_SS_1YearLabel}
     Verify Text On Page  ${e_invest_SS_3YearLabel}
     Verify Text On Page  ${e_invest_SS_5YearLabel}
-    Verify Text On Page  ${e_invest_SS_1YearVal}
-    Verify Text On Page  ${e_invest_SS_2YearVal}
-    Verify Text On Page  ${e_invest_SS_3YearVal}
     Verify Text On Page  ${e_invest_SS_mutualFundRisk}
     Verify Text On Page  ${e_invest_SS_periodLabel}
     Verify Text On Page  ${e_invest_SS_3MonthsLabel}

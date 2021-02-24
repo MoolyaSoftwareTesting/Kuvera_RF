@@ -124,6 +124,7 @@ Verify SaveSmart Widgets
     Wait And Verify Element And Text On Android  ${KU_A_savesmartSubTitle}  ${e_savesmartSubTitle}
     Swipe By Percent  50  50  20  20  900
     Verify Start SaveSmart Today  ${KU_A_inputField}
+    Verify Login Page On Android App
     Wait And Click Element On Android  ${KU_A_savesmartLabel}
     Sleep  2s
     Swipe By Percent  85  85  30  30  900
@@ -192,4 +193,3 @@ Verify Start SaveSmart Today
     Sleep  1s
     Input Text  ${inputField}  ${e_SS_amount}
     Wait And Click Element On Android  ${KU_A_button}
-    Verify Login Page On Android App
