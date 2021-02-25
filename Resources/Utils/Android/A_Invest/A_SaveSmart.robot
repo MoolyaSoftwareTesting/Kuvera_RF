@@ -6,7 +6,7 @@ Library     AppiumLibrary
 
 Verify Android PreLogin SaveSmart Page
     Log To Console  SaveSmart
-    Click On SaveSmart From Explore More
+    Click On SaveSmart From Explore
     Verify Title And SubTitle Of SaveSmart
     Verify Signup Link And Kuvera Logo
     Verify Start SaveSmart Today  ${KU_A_invest_SS_amountField}
@@ -35,9 +35,9 @@ Verify Return Calculator
     Verify Text On Page  ${e_invest_SS_3YearsAvg}
 
 
-Click On SaveSmart From Explore More
+Click On SaveSmart From Explore
     Navigate To Hamburger Menu  ${KU_A_invest_link}  ${e_invest_link}
-    Verify Text On Page  ${e_invest_exploreMore}
+    Verify Text On Page  ${e_invest_explore}
     Swipe By Percent  85  85  20  85  15000
     Verify Page Contains Element On Android  ${KU_A_invest_SS_linkFromExplore}
     Wait And Click Element On Android  ${KU_A_invest_SS_linkFromExplore}

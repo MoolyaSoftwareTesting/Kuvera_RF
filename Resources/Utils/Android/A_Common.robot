@@ -8,6 +8,7 @@ Resource   ../../../AppLocators/Android/A_MenuNavigationLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_InvestLandingPageLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_SaveSmartLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_GiltFundsLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_UltraShortLocators.robot
 
 *** Keywords ***
 

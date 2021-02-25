@@ -16,3 +16,5 @@ Resource    ../../Resources/Utils/Android/A_Features/A_Consolidate.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_InvestLandingPage.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_SaveSmart.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_GiltFunds.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_UltraShort.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_ELSSTaxSaver.robot

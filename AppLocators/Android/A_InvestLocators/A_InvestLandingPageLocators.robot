@@ -4,7 +4,7 @@ ${e_invest_link} =  Invest
 ${e_invest_lowRisk} =  Low risk
 ${e_invest_highRisk} =  High risk
 ${e_invest_SS_subTitle} =  Invest in low risk liquid funds and redeem upto ₹2 lakhs instantly
-${e_invest_exploreMore} =  Explore more
+${e_invest_explore} =  Explore
 ${e_invest_growth} =  Growth
 ${e_invest_dividend} =  Dividend
 ${e_invest_3Y} =  3Y
@@ -12,14 +12,17 @@ ${e_invest_watchlistTitle} =  Login to track your favorite funds by adding them 
 ${e_invest_importTagTitle} =  Import your MFs and switch to Direct. Start saving commissions.
 ${e_invest_instaRedeemFilter} =  Liquid Fund
 ${e_invest_saveTaxFilter} =  ELSS
-${e_invest_topRated_investorChoiceFilter} =  Equity
+${e_invest_ELSS_topRated_investorChoiceFilter} =  Equity
 ${e_invest_newFunds_openEnded} =  Open Ended
 ${e_invest_newFunds_closeEnded} =  Close Ended
+${e_invest_US_subTitle} =  Park money for the short term
+${e_invest_GF_US_filteredFund} =  Debt
+${e_invest_ELSS_subTitle} =  Save up to ₹46.8k in taxes.
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_link} =  xpath=//*[@text='Invest']
 ${KU_A_invest_saveSmartImg} =  xpath=//*[@text='savesmart']
-${KU_A_invest_SS_title} =  xpath=//*[@text='SaveSmart']
+${KU_A_invest_SS_tilesTitle} =  xpath=//*[@text='SaveSmart']
 ${KU_A_invest_SS_screenSubTitle} =  xpath=//*[@text='Liquid fund returns, higher instant withdrawal\n(upto ₹2 lakhs or 90% of holdings within 30 min)']
 ${KU_A_invest_GF_title} =  xpath=//*[@text='Gilt funds']
 ${KU_A_invest_searchBox} =  xpath=//*[@class='android.widget.EditText']
@@ -39,5 +42,6 @@ ${KU_A_invest_topRated} =  xpath=//*[@text='Top rated']
 ${KU_A_invest_investorChoice} =  xpath=//*[@text='Investor choice']
 ${KU_A_invest_newFunds} =  xpath=//*[@text='New funds']
 ${KU_A_invest_topSearched} =  xpath=//*[@text='Top searched']
+${KU_A_invest_US_tilesTitle} =  xpath=//*[@text='Ultra-short']
 ${KU_A_invest_topRated} =  xpath=//*[@text='Investor choice']
-${KU_A_invest_topRated} =  xpath=//*[@text='Investor choice']
+${KU_A_invest_ELSS_tilesTitle} =  xpath=//*[@text='ELSS tax saver']

@@ -20,11 +20,5 @@ ${e_invest_SS_1YearAvg} =  3.66%
 ${e_invest_SS_3YearsAvg} =  5.01%
 
 # Application Locator 'KU_<locatorName>'
-${KU_A_invest_SS_linkFromExplore} =  xpath=//*[@text='Save\nsmart']
+${KU_A_invest_SS_linkFromExplore} =  xpath=//*[@text='SaveSmart']
 ${KU_A_invest_SS_amountField} =  xpath=//*[@class='android.widget.EditText']
-${KU_A_invest_SS_screenTitle} =  xpath=//*[@text='Explore mutual funds']
-${KU_A_invest_SS_screenTitle} =  xpath=//*[@text='NAV']
-${KU_A_invest_SS_screenTitle} =  xpath=//*[@text='1Y']
-${KU_A_invest_SS_screenTitle} =  xpath=//*[@text='3Y']
-${KU_A_invest_SS_screenTitle} =  xpath=//*[@text='All funds']
-${KU_A_invest_SS_screenTitle} =  xpath=//*[@resource-id='faq-bot-codestart-id']

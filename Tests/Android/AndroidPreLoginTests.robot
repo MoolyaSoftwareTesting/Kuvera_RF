@@ -41,18 +41,3 @@ Invest Navigation Verification on Android
 SaveSmart Navigation Verification on Android
     [Tags]  TC05
     Verify Android PreLogin SaveSmart Page
-
-# All Menu Navigation under Features
-Features Header Navigation Verification on Android
-    [Tags]  TC06
-    Verify Android PreLogin Tax Harvesting Page
-
-# All Menu Navigation under Features
-Features Header Navigation Verification on Android
-    [Tags]  TC07
-    Verify Android PreLogin Save Taxes Page
-
-# All Menu Navigation under Features
-Features Header Navigation Verification on Android
-    [Tags]  TC08
-    Verify Android PreLogin Consolidate Page

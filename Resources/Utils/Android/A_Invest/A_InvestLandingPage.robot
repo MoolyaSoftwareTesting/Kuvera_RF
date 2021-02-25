@@ -12,17 +12,31 @@ Verify Android PreLogin Invest Tiles
     Verify Signup Link And Kuvera Logo
     # SaveSmart
     Verify Page Contains Element On Android  ${KU_A_invest_saveSmartImg}
-    Verify Page Contains Element On Android  ${KU_A_invest_SS_title}
+    Verify Page Contains Element On Android  ${KU_A_invest_SS_tilesTitle}
     Verify Text On Page  ${e_invest_SS_subTitle}
     Log To Console  SaveSmart
-    Wait And Click Element On Android  ${KU_A_invest_SS_title}
+    Wait And Click Element On Android  ${KU_A_invest_SS_tilesTitle}
     Verify Title And SubTitle Of SaveSmart
+    Go Back
+    # Ultra-Short
+    Verify Page Contains Element On Android  ${KU_A_invest_US_tilesTitle}
+    Verify Text On Page  ${e_invest_US_subTitle}
+    Verify Android PreLogin Ultra Short Page
     Go Back
     # Gilt Funds
     Wait And Click Element On Android  ${KU_A_invest_seekBar}
     Verify Page Contains Element On Android  ${KU_A_invest_GF_title}
     Verify Page Contains Element On Android  ${KU_A_invest_GF_subTitle}
     Verify Android PreLogin Gilt Funds Page
+    Go Back
+    # ELSS Tax Saver
+    Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    Verify Page Contains Element On Android  ${KU_A_invest_ELSS_tilesTitle}
+    Verify Text On Page  ${e_invest_ELSS_subTitle} 
+    Verify Android PreLogin ELSS Tax Saver Page
+
+   
+
 
 
 
@@ -40,7 +54,19 @@ Verify Presence Of Search Box WatchList Growth Button
     Verify Text On Page  ${e_invest_dividend}
     Verify Page Contains Element On Android  ${KU_A_watchListBtn}
 
+Verify Search Box Sort And Watchlist Button For ELSS
+    Verify Page Contains Element On Android  ${KU_A_invest_sortBtn}
+    Wait And Click Element On Android  ${KU_A_invest_sortBtn}
+    Verify Page Contains Element On Android  ${KU_A_invest_checkmark}
+    Verify Text On Page  ${e_invest_3Y}
+    Sleep  1s
+    Wait And Click Element On Android  ${KU_A_invest_sortBtn}
+    Verify Page Contains Element On Android  ${KU_A_invest_searchBox}
+    Verify Page Contains Element On Android  ${KU_A_watchListBtn}
+    Wait And Click Element On Android  ${KU_A_watchListBtn}
+
 Verify Sort And Filter Button
+    [Arguments]  ${filteredFund}
     Verify Page Contains Element On Android  ${KU_A_invest_sortBtn}
     Verify Page Contains Element On Android  ${KU_A_invest_filterBtn}
     Wait And Click Element On Android  ${KU_A_invest_sortBtn}
@@ -49,7 +75,7 @@ Verify Sort And Filter Button
     Sleep  1s
     Wait And Click Element On Android  ${KU_A_invest_sortBtn}
     Wait And Click Element On Android  ${KU_A_invest_filterBtn}
-    Verify Text On Page  ${e_invest_GF_filteredFund}
+    Verify Text On Page  ${filteredFund}
     Wait And Click Element On Android  ${KU_A_invest_doneBtn}
 
 Verify Import Tag
@@ -79,11 +105,11 @@ Verify Navigation To Tabs For Funds
     Swipe By Percent  45  15  20  15  15000
     # Top Rated
     Wait And Click Element On Android  ${KU_A_invest_topRated}
-    Verify Text On Page  ${e_invest_topRated_investorChoiceFilter}
+    Verify Text On Page  ${e_invest_ELSS_topRated_investorChoiceFilter}
     # Investor Choice
     Swipe By Percent  45  15  20  15  15000
     Wait And Click Element On Android  ${KU_A_invest_investorChoice}
-    Verify Text On Page  ${e_invest_topRated_investorChoiceFilter}
+    Verify Text On Page  ${e_invest_ELSS_topRated_investorChoiceFilter}
     # New Funds
     Swipe By Percent  45  15  20  15  15000
     Wait And Click Element On Android  ${KU_A_invest_newFunds} 
@@ -94,5 +120,3 @@ Verify Navigation To Tabs For Funds
     Wait And Click Element On Android  ${KU_A_invest_topSearched} 
     Verify Page Contains Element On Android  ${KU_A_watchListBtn}
     
-
-
