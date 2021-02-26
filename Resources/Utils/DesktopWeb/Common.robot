@@ -44,7 +44,10 @@ Resource    ../../../AppLocators/DesktopWeb/UnauthenticatedLinks/PricingLocators
 *** Keywords ***
 
 Launch URL
-    Open Browser  ${URL}  ${BROWSER}  alias=Kuvera
+    Run keyword If  '${ENV}' == '${e_prod}'  Open Browser  ${URL_prod}  ${BROWSER}  alias=Kuvera
+    ...    ELSE IF  '${ENV}' == '${e_stage3}'  Open Browser  ${URL_stage3}  ${BROWSER}  alias=Kuvera
+    ...    ELSE IF  '${ENV}' == '${e_stage2}'  Open Browser  ${URL_stage2}  ${BROWSER}  alias=Kuvera
+    Log To Console  ${ENV}
     # Maximize Browser Window
     Set Window Size  ${1920}  ${1080}
     Set Selenium Implicit Wait  4s
@@ -227,15 +230,16 @@ Click Link And Switch Window
     Sleep  2s  
 
 Navigate To Home Page
-    Go To  ${URL}
+    Run keyword If  '${ENV}' == '${e_prod}'  Go To  ${URL_prod}
+    ...    ELSE IF  '${ENV}' == '${e_stage3}'  Go To  ${URL_stage3}
     Set Window Size  ${1920}  ${1080}
     Reload Page
     Sleep  12s
 
 Logout From App And Navigate To Home Page PostLogin
-    Go To  ${URL}
+    Go To  ${URL_stage3}
     Logout From App Post Signup
-    Go To  ${URL}
+    Go To  ${URL_stage3}
     Set Window Size  ${1920}  ${1080}
     Reload Page
     Sleep  12s

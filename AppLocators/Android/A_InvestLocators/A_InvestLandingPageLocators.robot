@@ -8,8 +8,6 @@ ${e_invest_explore} =  Explore
 ${e_invest_growth} =  Growth
 ${e_invest_dividend} =  Dividend
 ${e_invest_3Y} =  3Y
-${e_invest_watchlistTitle} =  Login to track your favorite funds by adding them to your watch list.
-${e_invest_importTagTitle} =  Import your MFs and switch to Direct. Start saving commissions.
 ${e_invest_instaRedeemFilter} =  Liquid Fund
 ${e_invest_saveTaxFilter} =  ELSS
 ${e_invest_ELSS_topRated_investorChoiceFilter} =  Equity
@@ -18,6 +16,8 @@ ${e_invest_newFunds_closeEnded} =  Close Ended
 ${e_invest_US_subTitle} =  Park money for the short term
 ${e_invest_GF_US_filteredFund} =  Debt
 ${e_invest_ELSS_subTitle} =  Save up to ₹46.8k in taxes.
+${e_invest_ETF_subTitle} =  Go global with direct US ETF investing. We make it easy and cheap.
+${e_invest_1Y} =  1Y
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_link} =  xpath=//*[@text='Invest']
@@ -45,3 +45,14 @@ ${KU_A_invest_topSearched} =  xpath=//*[@text='Top searched']
 ${KU_A_invest_US_tilesTitle} =  xpath=//*[@text='Ultra-short']
 ${KU_A_invest_topRated} =  xpath=//*[@text='Investor choice']
 ${KU_A_invest_ELSS_tilesTitle} =  xpath=//*[@text='ELSS tax saver']
+${KU_A_invest_ETF_imgIcon} =  xpath=//*[@text='us-etf']
+${KU_A_invest_ETF_tilesTitle} =  xpath=//*[@text='US ETF']
+${KU_A_invest_allUSStocks} =  xpath=//*[@text='All US stocks']
+${KU_A_invest_gainers} =  xpath=//*[@text='Gainers']
+${KU_A_invest_losers} =  xpath=//*[@text='Losers']
+${KU_A_invest_52WHigh} =  xpath=//*[@text='52W high']
+${KU_A_invest_52WLow} =  xpath=//*[@text='52W high']
+${KU_A_invest_stocks_importTagTitle} =  xpath=//*[@text='Import US stocks & track your wealth in one place.']
+${KU_A_invest_funds_importTagTitle} =  xpath=//*[@text='Import your MFs and switch to Direct. Start saving commissions.']
+${KU_A_invest_stocks_watchlistTitle} =  xpath=//*[@text='Track your favorite stocks by adding them to your watch list.']
+${KU_A_invest_funds_watchlistTitle} =  xpath=//*[@text='Login to track your favorite funds by adding them to your watch list.']
