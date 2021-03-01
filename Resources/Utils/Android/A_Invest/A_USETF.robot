@@ -12,4 +12,4 @@ Verify Android PreLogin US ETF Page
     Verify Search Box Sort And Watchlist Button For ELSS And USETF  ${e_invest_1Y}
     Verify Login Page And Go Back 
     Verify Navigation To Tabs For Stocks
-    Go Back
+    # Go Back

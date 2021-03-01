@@ -19,3 +19,5 @@ Resource    ../../Resources/Utils/Android/A_Invest/A_GiltFunds.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_UltraShort.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_ELSSTaxSaver.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_USETF.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_EquityIndex.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_SectorFunds.robot

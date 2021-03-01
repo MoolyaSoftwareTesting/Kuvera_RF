@@ -18,6 +18,7 @@ ${e_invest_GF_US_filteredFund} =  Debt
 ${e_invest_ELSS_subTitle} =  Save up to ₹46.8k in taxes.
 ${e_invest_ETF_subTitle} =  Go global with direct US ETF investing. We make it easy and cheap.
 ${e_invest_1Y} =  1Y
+${e_invest_EI_subTitle} =  Get index returns at low cost.
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_link} =  xpath=//*[@text='Invest']
@@ -56,3 +57,6 @@ ${KU_A_invest_stocks_importTagTitle} =  xpath=//*[@text='Import US stocks & trac
 ${KU_A_invest_funds_importTagTitle} =  xpath=//*[@text='Import your MFs and switch to Direct. Start saving commissions.']
 ${KU_A_invest_stocks_watchlistTitle} =  xpath=//*[@text='Track your favorite stocks by adding them to your watch list.']
 ${KU_A_invest_funds_watchlistTitle} =  xpath=//*[@text='Login to track your favorite funds by adding them to your watch list.']
+${KU_A_invest_EI_tilesTitle} =  xpath=//*[@text='Equity index']
+${KU_A_invest_SF_tilesTitle} =  xpath=//*[@text='Sector funds']
+${KU_A_invest_SF_subTitle} =  xpath=//*[@text='Pharma, Tech & more']

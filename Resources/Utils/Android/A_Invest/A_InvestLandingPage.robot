@@ -42,6 +42,22 @@ Verify Android PreLogin Invest Tiles
     Verify Text On Page  ${e_invest_ETF_subTitle} 
     Verify Android PreLogin US ETF Page
     Go Back
+    # Equity Index
+    Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    Verify Page Contains Element On Android  ${KU_A_invest_EI_tilesTitle} 
+    Verify Text On Page  ${e_invest_EI_subTitle}
+    Verify Android PreLogin Equity Index Page
+    Go Back
+    # Sector Funds
+    Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    Swipe By Percent  45  15  70  15  15000
+    Verify Page Contains Element On Android  ${KU_A_invest_SF_tilesTitle} 
+    Verify Page Contains Element On Android  ${KU_A_invest_SF_subTitle}
+    Verify Android PreLogin Sector Funds Page
+    Go Back
+    
+    
+
 
 
    
