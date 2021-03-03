@@ -47,7 +47,7 @@ Verify Next Steps Details Page
 
 Verify Why TransferWise
     Sleep  2s
-    Swipe By Percent  50  50  35  35  900
+    Swipe By Percent  50  50  35  35  9000
     Log To Console  Title Text And Image Validation
     Wait And Verify Element And Text On Android  ${KU_A_remit_whyTransferWise}  ${e_remit_whyTransferWise}
     Wait And Verify Element And Text On Android  ${KU_A_remit_whyTransferWisePoint1}  ${e_remit_transferWisePoint1}

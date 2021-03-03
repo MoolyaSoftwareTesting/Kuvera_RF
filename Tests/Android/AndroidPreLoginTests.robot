@@ -37,7 +37,13 @@ Invest Navigation Verification on Android
     [Tags]  TC04
     Verify Android PreLogin Invest Tiles
 
+# Login and Signup Menu Navigation
+Login and Signup Navigation Verification on Android
+    [Tags]  TC05
+    Verify Android PreLogin Login Page Widgets
+
 # SaveSmart Menu Navigation Under Invest
 SaveSmart Navigation Verification on Android
-    [Tags]  TC05
+    [Tags]  TC06
     Verify Android PreLogin SaveSmart Page
+

@@ -18,6 +18,10 @@ Verify Android PreLogin Invest Tiles
     Wait And Click Element On Android  ${KU_A_invest_SS_tilesTitle}
     Verify Title And SubTitle Of SaveSmart
     Go Back
+    # Bank PSU Bonds
+    Verify Page Contains Element On Android  ${KU_A_invest_BankPSU_tilesTitle}
+    Verify Android PreLogin Bank & PSU Bonds Page
+    Go Back
     # Ultra-Short
     Verify Page Contains Element On Android  ${KU_A_invest_US_tilesTitle}
     Verify Text On Page  ${e_invest_US_subTitle}
@@ -55,17 +59,27 @@ Verify Android PreLogin Invest Tiles
     Verify Page Contains Element On Android  ${KU_A_invest_SF_subTitle}
     Verify Android PreLogin Sector Funds Page
     Go Back
-    
-    
-
-
-
-   
-
-
-
-
-
+    # Value Funds
+    Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    Swipe By Percent  45  15  70  15  15000
+    Verify Page Contains Element On Android  ${KU_A_invest_VF_tilesTitle} 
+    Verify Page Contains Element On Android  ${KU_A_invest_VF_subTitle}
+    Verify Android PreLogin Value Funds Page
+    Go Back
+    # 52Wk High India
+    Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    Swipe By Percent  45  15  70  15  15000
+    Verify Page Contains Element On Android  ${KU_A_invest_52WkIndia_tilesTitle} 
+    Verify Page Contains Element On Android  ${KU_A_invest_52WkIndia_subTitle}
+    Verify Android PreLogin 52Wk High India Page
+    Go Back
+    # 52Wk High US
+    Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    Swipe By Percent  45  15  70  15  15000
+    Verify Page Contains Element On Android  ${KU_A_invest_52WkUS_tilesTitle} 
+    Verify Page Contains Element On Android  ${KU_A_invest_52WkUS_subTitle}
+    Verify Android PreLogin 52Wk High US Page
+    Go Back
 
 
 Verify Title And SubTitle Of SaveSmart
@@ -80,7 +94,7 @@ Verify Presence Of Search Box WatchList Growth Button
     Verify Page Contains Element On Android  ${KU_A_watchListBtn}
     Wait And Click Element On Android  ${KU_A_watchListBtn}
 
-Verify Search Box Sort And Watchlist Button For ELSS And USETF
+Verify Search Box Sort And Watchlist Button For ELSS And Stocks
     [Arguments]  ${sortYear}
     Verify Page Contains Element On Android  ${KU_A_invest_sortBtn}
     Wait And Click Element On Android  ${KU_A_invest_sortBtn}
@@ -154,13 +168,14 @@ Verify Navigation To Tabs For Funds
     
 Verify Navigation To Tabs For Stocks
     # AllUSStocks
-    Wait And Click Element On Android  ${KU_A_invest_allUSStocks}
+    [Arguments]  ${stocksMenu}  ${importTitle}  ${watchlistTitle}
+    Wait And Click Element On Android  ${stocksMenu}
     Verify Page Contains Element On Android  ${KU_A_invest_sortBtn}
     Verify Page Contains Element On Android  ${KU_A_invest_filterBtn}
-    Verify Import Tag  ${KU_A_invest_stocks_importTagTitle}
+    Verify Import Tag  ${importTitle}
     # Watchlist
     Wait And Click Element On Android  ${KU_A_invest_watchlistMenu}
-    Verify Watchlist Menu Details  ${KU_A_invest_stocks_watchlistTitle}
+    Verify Watchlist Menu Details  ${watchlistTitle}
     # Gainers
     Wait And Click Element On Android  ${KU_A_invest_gainers}
     Verify Page Contains Element On Android  ${KU_A_invest_sortBtn}
@@ -188,3 +203,4 @@ Verify Navigation To Tabs For Stocks
     Verify Page Contains Element On Android  ${KU_A_watchListBtn}
     Wait And Click Element On Android  ${KU_A_watchListBtn}
     Verify Login Page And Go Back 
+ 

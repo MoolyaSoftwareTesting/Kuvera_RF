@@ -9,7 +9,7 @@ Verify Android PreLogin US ETF Page
     Wait And Click Element On Android  ${KU_A_invest_ETF_tilesTitle}
     Verify Signup Link And Kuvera Logo
     Verify Text On Page  ${e_invest_ETF_filteredStock}
-    Verify Search Box Sort And Watchlist Button For ELSS And USETF  ${e_invest_1Y}
+    Verify Search Box Sort And Watchlist Button For ELSS And Stocks  ${e_invest_1Y}
     Verify Login Page And Go Back 
-    Verify Navigation To Tabs For Stocks
+    Verify Navigation To Tabs For Stocks  ${KU_A_invest_allUSStocks}  ${KU_A_invest_stocks_importTagTitle}  ${KU_A_invest_stocks_watchlistTitle}
     # Go Back

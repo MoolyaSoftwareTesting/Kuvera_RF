@@ -74,6 +74,11 @@ ${e_gold_purchaseT&C} =  *Purchased gold can be sold after 7 days.
 ${e_gold_screenTitle} =  Buy 24K 99.9% pure digital gold - easily and securely.
 ${e_investYourWayTitle} =  Invest your way
 ${e_oneLoginTitle} =  One login. All features.
+${e_noAccountYet} =  Don't have an account? 
+${e_emailAddressLabel} =  EMAIL ADDRESS
+${e_passwordLabel} =  PASSWORD
+${e_forgotPasswordTitle} =  FORGOT PASSWORD
+${e_ORLabel} =  OR
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_slider5} =  xpath=//*[@text="Go to slide 5"]
@@ -146,3 +151,9 @@ ${KU_A_MF_1YLabel} =  xpath=//*[@text='1Y']
 ${KU_A_MF_3YLabel} =  xpath=//*[@text='3Y']
 ${KU_A_MF_allFundsLabel} =  xpath=//*[@text='All funds']
 ${KU_A_faqBotBtn} =  xpath=//*[@resource-id='faq-bot-codestart-id']
+${KU_A_emailField} =  xpath=//*[@resource-id='email']
+${KU_A_passwordField} =  xpath=//*[@resource-id='password']
+${KU_A_forgotPasswordLink} =  xpath=//*[@text='Forgot password?']
+${KU_A_loginBtn} =  xpath=//*[@resource-id='login-btn']
+${KU_A_loginGoogleBtn} =  xpath=//*[@resource-id='login-btn-google']
+${KU_A_loginFBBtn} =  xpath=//*[@resource-id='login-btn-fb']

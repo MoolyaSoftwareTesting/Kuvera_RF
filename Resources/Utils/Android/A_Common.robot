@@ -12,6 +12,9 @@ Resource   ../../../AppLocators/Android/A_InvestLocators/A_UltraShortLocators.ro
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_USETFLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_EquityIndexLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_SectorFundsLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_ValueFundsLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_52WkHighIndiaLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_BankPSUBondsLocators.robot
 
 *** Keywords ***
 

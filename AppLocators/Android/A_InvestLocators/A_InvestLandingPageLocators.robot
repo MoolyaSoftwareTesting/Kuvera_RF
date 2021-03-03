@@ -14,7 +14,7 @@ ${e_invest_ELSS_topRated_investorChoiceFilter} =  Equity
 ${e_invest_newFunds_openEnded} =  Open Ended
 ${e_invest_newFunds_closeEnded} =  Close Ended
 ${e_invest_US_subTitle} =  Park money for the short term
-${e_invest_GF_US_filteredFund} =  Debt
+${e_invest_GF_US_BankPSU_filteredFund} =  Debt
 ${e_invest_ELSS_subTitle} =  Save up to ₹46.8k in taxes.
 ${e_invest_ETF_subTitle} =  Go global with direct US ETF investing. We make it easy and cheap.
 ${e_invest_1Y} =  1Y
@@ -60,3 +60,12 @@ ${KU_A_invest_funds_watchlistTitle} =  xpath=//*[@text='Login to track your favo
 ${KU_A_invest_EI_tilesTitle} =  xpath=//*[@text='Equity index']
 ${KU_A_invest_SF_tilesTitle} =  xpath=//*[@text='Sector funds']
 ${KU_A_invest_SF_subTitle} =  xpath=//*[@text='Pharma, Tech & more']
+${KU_A_invest_VF_tilesTitle} =  xpath=//*[@text='Value funds']
+${KU_A_invest_VF_subTitle} =  xpath=//*[@text='Invest in stocks selling below their intrinsic or book value.']
+${KU_A_invest_52WkIndia_allStocksMenu} =  xpath=//*[@text='All stocks']
+${KU_A_invest_52WkIndia_tilesTitle} =  xpath=//*[@text='52 wk high India']
+${KU_A_invest_52WkIndia_subTitle} =  xpath=//*[@text='Momentum stocks in India']
+${KU_A_invest_52WkUS_tilesTitle} =  xpath=//*[@text='52 wk high US']
+${KU_A_invest_52WkUS_subTitle} =  xpath=//*[@text='Momentum stocks in US']
+${KU_A_invest_ETFMenu} =  xpath=//*[@text='ETF']
+${KU_A_invest_BankPSU_tilesTitle} =  xpath=//*[@text='Bank & PSU bonds']

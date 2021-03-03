@@ -11,6 +11,6 @@ Verify Android PreLogin ELSS Tax Saver Page
     Verify Text On Page  ${e_invest_saveTaxFilter} 
     Verify Text On Page  ${e_invest_ELSS_topRated_investorChoiceFilter} 
     Verify Signup Link And Kuvera Logo
-    Verify Search Box Sort And Watchlist Button For ELSS And USETF  ${e_invest_3Y}
+    Verify Search Box Sort And Watchlist Button For ELSS And Stocks  ${e_invest_3Y}
     Verify Navigation To Tabs For Funds
     Go Back

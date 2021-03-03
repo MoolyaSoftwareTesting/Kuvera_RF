@@ -21,3 +21,9 @@ Resource    ../../Resources/Utils/Android/A_Invest/A_ELSSTaxSaver.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_USETF.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_EquityIndex.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_SectorFunds.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_ValueFunds.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_52WkHighIndia.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_52WkHighUS.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_BankPSUBonds.robot
+Resource    ../../Resources/Utils/Android/A_Login.robot
+Resource    ../../Resources/Utils/Android/A_Signup.robot
