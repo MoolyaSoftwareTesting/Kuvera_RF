@@ -41,9 +41,24 @@ Invest Navigation Verification on Android
 Login and Signup Navigation Verification on Android
     [Tags]  TC05
     Verify Android PreLogin Login Page Widgets
+    Verify Android PreLogin Signup Page Widgets
 
 # SaveSmart Menu Navigation Under Invest
 SaveSmart Navigation Verification on Android
     [Tags]  TC06
     Verify Android PreLogin SaveSmart Page
 
+# Digi Gold Menu Navigation Under Invest
+Digi Gold Menu Navigation Under Invest
+    [Tags]  TC07
+    Verify Android PreLogin Digi Gold Page
+
+# FD Menu Navigation Under Invest
+FD Menu Navigation Under Invest
+    [Tags]  TC08
+    Verify Android PreLogin FD Page
+
+# Crypto Menu Navigation Under Invest
+Crypto Menu Navigation Under Invest
+    [Tags]  TC09
+    Verify Android PreLogin Crypto Page

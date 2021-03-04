@@ -79,6 +79,12 @@ ${e_emailAddressLabel} =  EMAIL ADDRESS
 ${e_passwordLabel} =  PASSWORD
 ${e_forgotPasswordTitle} =  FORGOT PASSWORD
 ${e_ORLabel} =  OR
+${e_signupSubTitle} =  Get on board India’s friendliest investing platform!
+${e_alreadyHaveAcc} =  Already have an account? 
+${e_mobileLabel} =  MOBILE
+${e_inviteMsg} =  Use your friends invite code and earn 100 coins on signup.
+${e_setPasswordLabel} =  SET A PASSWORD
+${e_inviteCodeLabel} =  INVITE CODE (OPTIONAL)
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_slider5} =  xpath=//*[@text="Go to slide 5"]
@@ -157,3 +163,9 @@ ${KU_A_forgotPasswordLink} =  xpath=//*[@text='Forgot password?']
 ${KU_A_loginBtn} =  xpath=//*[@resource-id='login-btn']
 ${KU_A_loginGoogleBtn} =  xpath=//*[@resource-id='login-btn-google']
 ${KU_A_loginFBBtn} =  xpath=//*[@resource-id='login-btn-fb']
+${KU_A_mobileNumField} =  xpath=//*[@resource-id='mobile_number']
+${KU_A_inviteCodeField} =  xpath=//*[@resource-id='invite_code']
+${KU_A_signupBlueBtn} =  xpath=//*[@resource-id='signup-btn']
+${KU_A_signupGoogleBtn} =  xpath=//*[@resource-id='signup-btn-google']
+${KU_A_signupFBBtn} =  xpath=//*[@resource-id='signup-btn-fb']
+${KU_A_hamburger_signupLink} =  xpath=(//*[@text='Sign up'])[3]

@@ -18,9 +18,24 @@ Verify Android PreLogin Invest Tiles
     Wait And Click Element On Android  ${KU_A_invest_SS_tilesTitle}
     Verify Title And SubTitle Of SaveSmart
     Go Back
+    # FD
+    Verify Page Contains Element On Android  ${KU_A_invest_FD_tilesTitle}
+    Verify Page Contains Element On Android  ${KU_A_invest_FD_subTitle}
+    Log To Console  FD 
+    Wait And Click Element On Android  ${KU_A_invest_FD_tilesTitle}
+    Verify Text On Page  ${e_invest_FD_allFDMenu}
+    Go Back
     # Bank PSU Bonds
     Verify Page Contains Element On Android  ${KU_A_invest_BankPSU_tilesTitle}
     Verify Android PreLogin Bank & PSU Bonds Page
+    Go Back
+    # Digi Gold
+    Verify Page Contains Element On Android  ${KU_A_invest_digiGold_imgIcon}
+    Verify Page Contains Element On Android  ${KU_A_invest_digiGold_tilesTitle}
+    Verify Page Contains Element On Android  ${KU_A_invest_digiGold_subTitle}
+    Log To Console  Digi Gold
+    Wait And Click Element On Android  ${KU_A_invest_digiGold_tilesTitle}
+    Verify Text On Page  ${e_gold_screenTitle}
     Go Back
     # Ultra-Short
     Verify Page Contains Element On Android  ${KU_A_invest_US_tilesTitle}
@@ -65,6 +80,15 @@ Verify Android PreLogin Invest Tiles
     Verify Page Contains Element On Android  ${KU_A_invest_VF_tilesTitle} 
     Verify Page Contains Element On Android  ${KU_A_invest_VF_subTitle}
     Verify Android PreLogin Value Funds Page
+    Go Back
+    # Crypto
+    Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    Swipe By Percent  45  15  70  15  15000
+    Verify Page Contains Element On Android  ${KU_A_invest_crypto_title} 
+    Verify Page Contains Element On Android  ${KU_A_invest_crypto_subTitle} 
+    Log To Console  Crypto
+    Wait And Click Element On Android  ${KU_A_invest_crypto_title}
+    Verify Text On Page  ${e_invest_crypto_allCryptoMenu}
     Go Back
     # 52Wk High India
     Wait And Click Element On Android  ${KU_A_invest_seekBar}
