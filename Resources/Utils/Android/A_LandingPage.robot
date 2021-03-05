@@ -136,30 +136,12 @@ Verify Gold Widgets
     Sleep  2s
     Swipe By Percent  70  70  30  30  900
     Log To Console  Gold Rate And Label Validation
-    Wait And Verify Element And Text On Android  ${KU_A_gold_buyRateLabel}  ${e_gold_buyRateLabel} 
-    Wait And Verify Element And Text On Android  ${KU_A_gold_partnerLabel}  ${e_gold_partnerLabel}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_purityLabel}  ${e_gold_purityLabel}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_partner}  ${e_gold_partner}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_purityValue}  ${e_gold_purityValue} 
-    Wait And Verify Element And Text On Android  ${KU_A_gold_rupeeIcon}  ${e_gold_rupeeIcon}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_unit}  ${e_gold_unit}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_enterAmtLabel}  ${e_gold_enterAmtLabel}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_enterGmLabel}  ${e_gold_enterGmLabel}
-    Wait And Click Element On Android  ${KU_A_gold_goldVal}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_purchaseT&C}  ${e_gold_purchaseT&C}
-    Wait And Verify Element And Text On Android  ${KU_A_gold_comingSoon}  ${e_gold_comingSoon}
-    Sleep  1s
-    Wait And Click Element On Android  ${KU_A_gold_buyNowBtn}
+    Verify Buy Gold Menu Details
     Verify Login Page On Android App
     Wait And Click Element On Android  ${KU_A_goldLabel}
     Swipe By Percent  85  85  30  30  900
     Sleep  2s
-    Wait And Click Element On Android  ${KU_A_gold_enterGmLabel}
-    Sleep  1s
-    Hide Keyboard
-    Input Text  ${KU_A_inputField}  ${e_gold_gramValue}
-    Sleep  1s
-    Wait And Click Element On Android  ${KU_A_gold_buyNowBtn}
+    Verify Gold On Grams
     Verify Login Page On Android App
     Wait And Click Element On Android  ${KU_A_goldLabel}
     Sleep  1s
@@ -193,3 +175,28 @@ Verify Start SaveSmart Today
     Sleep  1s
     Input Text  ${inputField}  ${e_SS_amount}
     Wait And Click Element On Android  ${KU_A_button}
+
+Verify Buy Gold Menu Details
+    Wait And Verify Element And Text On Android  ${KU_A_gold_buyRateLabel}  ${e_gold_buyRateLabel} 
+    Wait And Verify Element And Text On Android  ${KU_A_gold_partnerLabel}  ${e_gold_partnerLabel}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_purityLabel}  ${e_gold_purityLabel}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_partner}  ${e_gold_partner}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_purityValue}  ${e_gold_purityValue} 
+    Wait And Verify Element And Text On Android  ${KU_A_gold_rupeeIcon}  ${e_gold_rupeeIcon}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_unit}  ${e_gold_unit}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_enterAmtLabel}  ${e_gold_enterAmtLabel}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_enterGmLabel}  ${e_gold_enterGmLabel}
+    Wait And Click Element On Android  ${KU_A_gold_goldVal}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_purchaseT&C}  ${e_gold_purchaseT&C}
+    Wait And Verify Element And Text On Android  ${KU_A_gold_comingSoon}  ${e_gold_comingSoon}
+    Sleep  1s
+    Wait And Click Element On Android  ${KU_A_gold_buyNowBtn}
+    
+
+Verify Gold On Grams
+    Wait And Click Element On Android  ${KU_A_gold_enterGmLabel}
+    Sleep  1s
+    Hide Keyboard
+    Input Text  ${KU_A_inputField}  ${e_gold_gramValue}
+    Sleep  1s
+    Wait And Click Element On Android  ${KU_A_gold_buyNowBtn}  

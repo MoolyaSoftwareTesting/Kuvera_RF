@@ -151,6 +151,10 @@ Verify Text On Page
     [Arguments]  ${text}
     Wait Until Page Contains  ${text}  timeout=30
     Run Keyword And Continue On Failure  Page Should Contain Text  ${text}
-   
+
+Verify Live Gold Value
+    Wait Until Element Is Visible  ${KU_A_invest_DG_liveGoldVal}  timeout=90
+    Run Keyword And Continue On Failure  Page Should Contain Element  ${KU_A_invest_DG_liveGoldVal}
+
 Quit Kuvera Application
     Quit Application

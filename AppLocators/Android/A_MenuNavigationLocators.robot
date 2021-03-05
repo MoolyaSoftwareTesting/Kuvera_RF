@@ -79,6 +79,7 @@ ${e_remit_transferWisePoint3} =  Trusted by 7 million users
 ${e_remit_transferWisePoint4} =  Fast way to send money
 ${e_remit_transferWisePoint5} =  Mid-market exchange rate
 ${e_remit_knowMoreBtn} =  Know More
+${e_remit_bannerTitle} =  Win ₹1,000 digital gold on your first transfer.
 
 # Features- Set A Goal
 ${e_featureLink} =  Features
@@ -253,6 +254,8 @@ ${KU_A_remit_trustedCustomersImg} =  xpath=//*[@text='trusted_customers']
 ${KU_A_remit_openWithLabel} =  xpath=//*[@text='Open with']
 ${KU_A_remit_chromeOption} =  xpath=//*[@text='Chrome']
 ${KU_A_remit_alwaysBtn} =  xpath=//*[@text='Always']
+${KU_A_remit_transferBannerImg} =  xpath=//*[@text='tranferwise-banner']
+${KU_A_remit_knowMoreLink} =  xpath=//*[@text='Know more ']
 
 # Feature- Set A Goal
 ${KU_A_featureLink} =  xpath=//*[@text='Features ']
