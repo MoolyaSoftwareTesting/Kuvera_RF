@@ -10,13 +10,13 @@ Verify Android PreLogin MF Page
     Verify Page Contains Element On Android  ${KU_A_invest_MF_imgfromExplore}
     Verify Page Contains Element On Android  ${KU_A_invest_MF_title}
     Wait And Click Element On Android  ${KU_A_invest_MF_title}
-    # Verify Signup Link And Kuvera Logo
-    # Verify Sort And Filter Button  ${e_invest_MF_filter}
-    # Verify Presence Of Search Box WatchList Growth Button 
-    # Verify Navigation To Tabs For Funds
-    # Go Back
-    # Go Back
-    # Wait And Click Element On Android  ${KU_A_invest_MF_title}
+    Verify Signup Link And Kuvera Logo
+    Verify Sort And Filter Button  ${e_invest_MF_filter}
+    Verify Presence Of Search Box WatchList Growth Button 
+    Verify Navigation To Tabs For Funds
+    Go Back
+    Go Back
+    Wait And Click Element On Android  ${KU_A_invest_MF_title}
     Verify Fund Details Screen On Android
 
 
@@ -41,15 +41,15 @@ Verify Tata Digital India DR MF Details Page
     Wait And Click Element On Android  ${KU_A_invest_MF_dividendIcon}
     Wait And Click Element On Android  ${KU_A_invest_MF_mf1}
     Verify Text On Page  ${e_invest_MF_mf1}
-    # Wait And Click Element On Android  ${KU_A_invest_MF_equityBtn}
-    # Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
-    # Go Back
-    # Wait And Click Element On Android  ${KU_A_invest_MF_sectoralBtn}
-    # Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
-    # Go Back
-    # Verify WatchList Button Of Invest
-    # Verify Period Wise Graphs 
-    # Verify AUM And TER info
+    Wait And Click Element On Android  ${KU_A_invest_MF_equityBtn}
+    Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
+    Go Back
+    Wait And Click Element On Android  ${KU_A_invest_MF_sectoralBtn}
+    Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
+    Go Back
+    Verify WatchList Button Of Invest
+    Verify Period Wise Graphs 
+    Verify AUM And TER info
     Verify Invest Now Button
     Verify Compare With Other Fund  ${e_invest_MF_mf1Name}
     
