@@ -33,14 +33,19 @@ Verify Android PreLogin Digi Gold Page
     Verify Buy Gold Menu Details
     Verify Login Page And Go Back 
     Wait And Click Element On Android  ${KU_A_invest_DG_refreshIcon}
+    # Verify Live Gold Value  ${KU_A_invest_DG_liveGoldBuyVal}
     Verify Gold On Grams
     Verify Login Page And Go Back
+    # The Kuvera Advantage
+    Verify Kuvera Advantage
+    Open Bot And Validate Question On Android  ${KU_A_invest_DG_botQuestion1}
 
 Verify Sell Gold Details
     Wait And Click Element On Android  ${KU_A_invest_DG_sellIcon}
     Verify Page Contains Element On Android  ${KU_A_invest_DG_sellImg} 
     Verify Text On Page  ${e_invest_DG_sellRateLabel}
     Wait And Click Element On Android  ${KU_A_invest_DG_refreshIcon}
+    # Verify Live Gold Value  ${KU_A_invest_DG_liveGoldSellVal}
     Verify Text On Page  ${e_gold_partnerLabel}
     Verify Text On Page  ${e_gold_purityLabel}
     Verify Text On Page  ${e_gold_partner}
@@ -74,3 +79,22 @@ Verify Login And Signup On Gold
     Wait And Click Element On Android  ${KU_A_signupLink}
     Verify Signup Page On Android App
     Go Back
+
+Verify Kuvera Advantage
+    Verify Text On Page  ${e_invest_DG_kuveraAdvantage}
+    Verify Text On Page  ${e_invest_DG_highestPurity}
+    Verify Text On Page  ${e_invest_DG_highestPurityDesc}
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_highestPurityImg}
+    Verify Text On Page  ${e_invest_DG_secure}
+    Verify Text On Page  ${e_invest_DG_secureDesc}
+    Swipe By Percent  90  90  50  50  9000
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_secureImg}
+    Verify Text On Page  ${e_invest_DG_fullyLiquid}
+    Verify Text On Page  ${e_invest_DG_fullyLiquidDesc}
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_fullyLiquidImg}
+    Verify Text On Page  ${e_invest_DG_livePrices}
+    Verify Text On Page  ${e_invest_DG_livePricesDesc}
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_livePricesImg}
+    Swipe By Percent  20  20  10  10  9000
+    Verify Text On Page  ${e_invest_DG_augmont}
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_augmontImg}

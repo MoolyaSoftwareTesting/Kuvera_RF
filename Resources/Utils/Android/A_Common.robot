@@ -18,6 +18,7 @@ Resource   ../../../AppLocators/Android/A_InvestLocators/A_FDLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_CryptoLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_DigiGoldLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_BankPSUBondsLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_MFLocators.robot
 
 *** Keywords ***
 
@@ -153,8 +154,16 @@ Verify Text On Page
     Run Keyword And Continue On Failure  Page Should Contain Text  ${text}
 
 Verify Live Gold Value
-    Wait Until Element Is Visible  ${KU_A_invest_DG_liveGoldVal}  timeout=90
-    Run Keyword And Continue On Failure  Page Should Contain Element  ${KU_A_invest_DG_liveGoldVal}
+    [Arguments]  ${liveGoldVal}
+    Wait And Click Element On Android  ${KU_A_invest_DG_refreshIcon}
+    Run Keyword And Continue On Failure  Page Should Contain Element  ${liveGoldVal}
+
+Open Bot And Validate Question On Android
+    [Arguments]  ${question}
+    Verify Page Contains Element On Android  ${KU_A_faqBotBtn}
+    Wait And Click Element On Android  ${KU_A_faqBotBtn}
+    Verify Page Contains Element On Android  ${question}
+    Wait And Click Element On Android  ${KU_A_botCloseBtn} 
 
 Quit Kuvera Application
     Quit Application

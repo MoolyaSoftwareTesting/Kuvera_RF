@@ -62,3 +62,8 @@ FD Menu Navigation Under Invest
 Crypto Menu Navigation Under Invest
     [Tags]  TC09
     Verify Android PreLogin Crypto Page
+
+# MF Menu Navigation Under Invest
+MF Menu Navigation Under Invest
+    [Tags]  TC10
+    Verify Android PreLogin MF Page
