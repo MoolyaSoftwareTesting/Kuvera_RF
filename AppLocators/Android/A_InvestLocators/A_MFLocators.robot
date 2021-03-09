@@ -27,7 +27,9 @@ ${e_invest_MF_minSIPLabel} =  Minimum SIP
 ${e_invest_MF_minLumpsumLabel} =  Minimum lumpsum
 ${e_invest_MF_addLumpsumLabel} =  Additional lumpsum
 ${e_invest_MF_mf2Name} =  Axis Bluechip (G)
-
+${e_invest_MF_mf3Name} =  Mirae Hybrid Equity ...
+${e_invest_MF_mf4Name} =  LIC MF Childrens (G)
+${e_invest_MF_mf5Name} =  ICICI Pru Constant M...
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_MF_imgfromExplore} =  xpath=//*[@text='mf']
@@ -36,7 +38,12 @@ ${KU_A_invest_MF_searchIcon} =  xpath=//*[@text='search-icon-active']
 ${KU_A_invest_MF_dividendIcon} =  xpath=//*[@text='Dividend']
 ${KU_A_invest_MF_mf1} =  xpath=//*[@text='Tata Digital India (DR)']
 ${KU_A_invest_MF_mf2} =  xpath=//*[@text='Axis Bluechip (G)']
+${KU_A_invest_MF_mf3} =  xpath=//*[@text='Mirae Hybrid Equity (G)']
+${KU_A_invest_MF_mf4} =  xpath=//*[@text='LIC MF Childrens (G)']
+${KU_A_invest_MF_mf5} =  xpath=//*[@text='ICICI Pru Constant Maturity Gilt (G)']
 ${KU_A_invest_MF_equityBtn} =  xpath=//*[@text='Equity']
+${KU_A_invest_MF_largeCapBtn} =  xpath=//*[@text='Large Cap Fund']
+${KU_A_invest_MF_topWatchlistedBtn} =  xpath=//*[@text='Top watchlisted']
 ${KU_A_invest_MF_sectoralBtn} =  xpath=//*[@text='Sectoral/Thematic']
 ${KU_A_invest_MF_investNowBtn} =  xpath=//*[@text='Invest now']
 ${KU_A_invest_MF_addToCartBtn} =  xpath=//*[@text='Add to cart']
@@ -46,7 +53,16 @@ ${KU_A_invest_MF_closePopup} =  xpath=//*[@text='close-nav-mobile']
 ${KU_A_invest_MF_pastPerformance} =  xpath=//*[@text='Past performance']
 ${KU_A_invest_MF_seeFundHoldings} =  xpath=//*[@text='See fund holdings as of 31st Jan']
 ${KU_A_invest_MF_otherInfo} =  xpath=//*[@text='Other information']
-${KU_A_SIPInputField} =  xpath=(//*[@class='android.widget.EditText'])[1]
-${KU_A_lumpsumInputField} =  xpath=(//*[@class='android.widget.EditText'])[2]
+${KU_A_invest_MF_SIPInputField} =  xpath=(//*[@class='android.widget.EditText'])[1]
+${KU_A_invest_MF_lumpsumInputField} =  xpath=(//*[@class='android.widget.EditText'])[2]
+${KU_A_invest_MF_hybridBtn} =  xpath=//*[@text='Hybrid']
+${KU_A_invest_MF_aggHybridBtn} =  xpath=//*[@text='Aggressive Hybrid Fund']
+${KU_A_invest_MF_solutionOrientedBtn} =  xpath=//*[@text='Solution Oriented']
+${KU_A_invest_MF_childrensFundBtn} =  xpath=//*[@text='Childrens Fund']
+${KU_A_invest_MF_debtBtn} =  xpath=//*[@text='Debt']
+${KU_A_invest_MF_ICICIfilter2Btn} =  xpath=//*[@text='Gilt Fund with 10 year constant duration']
+${KU_A_invest_MF_SIP_lumpsum_InvestBtn} =  xpath=(//*[@text='Invest now'])[2]
+
+
 
 

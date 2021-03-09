@@ -11,13 +11,13 @@ Verify Android PreLogin Invest Tiles
     Verify Text On Page  ${e_invest_highRisk}
     Verify Signup Link And Kuvera Logo
     # SaveSmart
-    Verify Page Contains Element On Android  ${KU_A_invest_saveSmartImg}
-    Verify Page Contains Element On Android  ${KU_A_invest_SS_tilesTitle}
-    Verify Text On Page  ${e_invest_SS_subTitle}
-    Log To Console  SaveSmart
-    Wait And Click Element On Android  ${KU_A_invest_SS_tilesTitle}
-    Verify Title And SubTitle Of SaveSmart
-    Go Back
+    # Verify Page Contains Element On Android  ${KU_A_invest_saveSmartImg}
+    # Verify Page Contains Element On Android  ${KU_A_invest_SS_tilesTitle}
+    # Verify Text On Page  ${e_invest_SS_subTitle}
+    # Log To Console  SaveSmart
+    # Wait And Click Element On Android  ${KU_A_invest_SS_tilesTitle}
+    # Verify Title And SubTitle Of SaveSmart
+    # Go Back
     # FD
     Verify Page Contains Element On Android  ${KU_A_invest_FD_tilesTitle}
     Verify Page Contains Element On Android  ${KU_A_invest_FD_subTitle}
@@ -26,9 +26,9 @@ Verify Android PreLogin Invest Tiles
     Verify Text On Page  ${e_invest_FD_allFDMenu}
     Go Back
     # Bank PSU Bonds
-    Verify Page Contains Element On Android  ${KU_A_invest_BankPSU_tilesTitle}
-    Verify Android PreLogin Bank & PSU Bonds Page
-    Go Back
+    # Verify Page Contains Element On Android  ${KU_A_invest_BankPSU_tilesTitle}
+    # Verify Android PreLogin Bank & PSU Bonds Page
+    # Go Back
     # Digi Gold
     Verify Page Contains Element On Android  ${KU_A_invest_digiGold_imgIcon}
     Verify Page Contains Element On Android  ${KU_A_invest_digiGold_tilesTitle}
@@ -38,49 +38,49 @@ Verify Android PreLogin Invest Tiles
     Verify Text On Page  ${e_gold_screenTitle}
     Go Back
     # Ultra-Short
-    Verify Page Contains Element On Android  ${KU_A_invest_US_tilesTitle}
-    Verify Text On Page  ${e_invest_US_subTitle}
-    Verify Android PreLogin Ultra Short Page
-    Go Back
-    # Gilt Funds
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Verify Page Contains Element On Android  ${KU_A_invest_GF_title}
-    Verify Page Contains Element On Android  ${KU_A_invest_GF_subTitle}
-    Verify Android PreLogin Gilt Funds Page
-    Go Back
-    # ELSS Tax Saver
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Verify Page Contains Element On Android  ${KU_A_invest_ELSS_tilesTitle}
-    Verify Text On Page  ${e_invest_ELSS_subTitle} 
-    Verify Android PreLogin ELSS Tax Saver Page
-    Go Back
-    # US ETF
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Verify Page Contains Element On Android  ${KU_A_invest_ETF_tilesTitle}
-    Verify Page Contains Element On Android  ${KU_A_invest_ETF_imgIcon} 
-    Verify Text On Page  ${e_invest_ETF_subTitle} 
-    Verify Android PreLogin US ETF Page
-    Go Back
-    # Equity Index
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Verify Page Contains Element On Android  ${KU_A_invest_EI_tilesTitle} 
-    Verify Text On Page  ${e_invest_EI_subTitle}
-    Verify Android PreLogin Equity Index Page
-    Go Back
-    # Sector Funds
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Swipe By Percent  45  15  70  15  15000
-    Verify Page Contains Element On Android  ${KU_A_invest_SF_tilesTitle} 
-    Verify Page Contains Element On Android  ${KU_A_invest_SF_subTitle}
-    Verify Android PreLogin Sector Funds Page
-    Go Back
-    # Value Funds
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Swipe By Percent  45  15  70  15  15000
-    Verify Page Contains Element On Android  ${KU_A_invest_VF_tilesTitle} 
-    Verify Page Contains Element On Android  ${KU_A_invest_VF_subTitle}
-    Verify Android PreLogin Value Funds Page
-    Go Back
+    # Verify Page Contains Element On Android  ${KU_A_invest_US_tilesTitle}
+    # Verify Text On Page  ${e_invest_US_subTitle}
+    # Verify Android PreLogin Ultra Short Page
+    # Go Back
+    # # Gilt Funds
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Verify Page Contains Element On Android  ${KU_A_invest_GF_title}
+    # Verify Page Contains Element On Android  ${KU_A_invest_GF_subTitle}
+    # Verify Android PreLogin Gilt Funds Page
+    # Go Back
+    # # ELSS Tax Saver
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Verify Page Contains Element On Android  ${KU_A_invest_ELSS_tilesTitle}
+    # Verify Text On Page  ${e_invest_ELSS_subTitle} 
+    # Verify Android PreLogin ELSS Tax Saver Page
+    # Go Back
+    # # US ETF
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Verify Page Contains Element On Android  ${KU_A_invest_ETF_tilesTitle}
+    # Verify Page Contains Element On Android  ${KU_A_invest_ETF_imgIcon} 
+    # Verify Text On Page  ${e_invest_ETF_subTitle} 
+    # Verify Android PreLogin US ETF Page
+    # Go Back
+    # # Equity Index
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Verify Page Contains Element On Android  ${KU_A_invest_EI_tilesTitle} 
+    # Verify Text On Page  ${e_invest_EI_subTitle}
+    # Verify Android PreLogin Equity Index Page
+    # Go Back
+    # # Sector Funds
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Swipe By Percent  45  15  70  15  15000
+    # Verify Page Contains Element On Android  ${KU_A_invest_SF_tilesTitle} 
+    # Verify Page Contains Element On Android  ${KU_A_invest_SF_subTitle}
+    # Verify Android PreLogin Sector Funds Page
+    # Go Back
+    # # Value Funds
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Swipe By Percent  45  15  70  15  15000
+    # Verify Page Contains Element On Android  ${KU_A_invest_VF_tilesTitle} 
+    # Verify Page Contains Element On Android  ${KU_A_invest_VF_subTitle}
+    # Verify Android PreLogin Value Funds Page
+    # Go Back
     # Crypto
     Wait And Click Element On Android  ${KU_A_invest_seekBar}
     Swipe By Percent  45  15  70  15  15000
@@ -91,19 +91,19 @@ Verify Android PreLogin Invest Tiles
     Verify Text On Page  ${e_invest_crypto_allCryptoMenu}
     Go Back
     # 52Wk High India
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Swipe By Percent  45  15  70  15  15000
-    Verify Page Contains Element On Android  ${KU_A_invest_52WkIndia_tilesTitle} 
-    Verify Page Contains Element On Android  ${KU_A_invest_52WkIndia_subTitle}
-    Verify Android PreLogin 52Wk High India Page
-    Go Back
-    # 52Wk High US
-    Wait And Click Element On Android  ${KU_A_invest_seekBar}
-    Swipe By Percent  45  15  70  15  15000
-    Verify Page Contains Element On Android  ${KU_A_invest_52WkUS_tilesTitle} 
-    Verify Page Contains Element On Android  ${KU_A_invest_52WkUS_subTitle}
-    Verify Android PreLogin 52Wk High US Page
-    Go Back
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Swipe By Percent  45  15  70  15  15000
+    # Verify Page Contains Element On Android  ${KU_A_invest_52WkIndia_tilesTitle} 
+    # Verify Page Contains Element On Android  ${KU_A_invest_52WkIndia_subTitle}
+    # Verify Android PreLogin 52Wk High India Page
+    # Go Back
+    # # 52Wk High US
+    # Wait And Click Element On Android  ${KU_A_invest_seekBar}
+    # Swipe By Percent  45  15  70  15  15000
+    # Verify Page Contains Element On Android  ${KU_A_invest_52WkUS_tilesTitle} 
+    # Verify Page Contains Element On Android  ${KU_A_invest_52WkUS_subTitle}
+    # Verify Android PreLogin 52Wk High US Page
+    # Go Back
 
 
 Verify Title And SubTitle Of SaveSmart

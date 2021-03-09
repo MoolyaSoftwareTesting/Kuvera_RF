@@ -15,16 +15,13 @@ Verify Android PreLogin Digi Gold Page
     # Sell
     Log To Console  Sell
     Verify Sell Gold Details
-    Log Source  loglevel=INFO  
     # Start SIP
     Log To Console  SIP
     Wait And Click Element On Android  ${KU_A_invest_DG_startSIP}
-    Log Source  loglevel=INFO 
     Verify SIP Gold Details
     # Track
     Log To Console  Track
-    Wait And Click Element On Android  ${KU_A_invest_DG_trackIcon}
-    Log Source  loglevel=INFO  
+    Wait And Click Element On Android  ${KU_A_invest_DG_trackIcon}  
     Verify Track Details
     # Buy
     Log To Console  Buy

@@ -165,5 +165,9 @@ Open Bot And Validate Question On Android
     Verify Page Contains Element On Android  ${question}
     Wait And Click Element On Android  ${KU_A_botCloseBtn} 
 
+Press Enter Key On Android
+    [Arguments]  ${element}  
+    Press Keys  ${element}  ENTER
+    
 Quit Kuvera Application
     Quit Application
