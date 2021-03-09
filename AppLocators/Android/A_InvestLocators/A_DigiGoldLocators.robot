@@ -1,7 +1,6 @@
 *** Variables ***
 # Application Expected Values 'e_<VariableName>'
 ${e_invest_DG_sellRateLabel} =  Live Sell Rate
-${e_invest_DG_loginToSellGold} =  Log in to sell gold.
 ${e_invest_DG_SIPGold} =  Start gold SIP with Kuvera
 ${e_invest_DG_addGoldPurchased} =  Add gold purchased outside Kuvera
 ${e_invest_DG_kuveraAdvantage} =  The Kuvera Advantage
@@ -31,7 +30,7 @@ ${KU_A_invest_DG_startSIP} =  xpath=//*[@text='Start SIP']
 ${KU_A_invest_DG_noAccountMsg} =  xpath=//*[@text='Don’t have an account?']
 ${KU_A_invest_DG_trackIcon} =  xpath=//*[@text='Track']
 ${KU_A_invest_DG_trackImg} =  xpath=//*[@text='add-gold-active']
-${KU_A_invest_DG_loginToSIPGold} =  xpath=//*[@text='Log in to sell gold.']
+${KU_A_invest_DG_loginToSellGold} =  xpath=//*[@text='Log in to sell gold.']
 ${KU_A_invest_DG_loginToAddGold} =  xpath=//*[@text='Log in to add gold.']
 ${KU_A_invest_DG_secureImg} =  xpath=//*[@text='gold-product-secure']
 ${KU_A_invest_DG_fullyLiquidImg} =  xpath=//*[@text='gold-product-liquid']
@@ -39,3 +38,4 @@ ${KU_A_invest_DG_highestPurityImg} =  xpath=//*[@text='gold-product-purity']
 ${KU_A_invest_DG_livePricesImg} =  xpath=//*[@text='goldProductBestPrice']
 ${KU_A_invest_DG_augmontImg} =  xpath=//*[@text='goldProductPartner']
 ${KU_A_invest_DG_botQuestion1} =  xpath=//*[@text='How do I buy Gold on Kuvera?']
+${KU_A_invest_DG_loginToSIPGold} =  xpath=//*[@text='Log in to start gold SIP.']

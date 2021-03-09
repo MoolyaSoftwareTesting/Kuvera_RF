@@ -22,6 +22,7 @@ ${e_invest_EI_subTitle} =  Get index returns at low cost.
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_link} =  xpath=//*[@text='Invest']
+${KU_A_invest_all} =  xpath=//*[@text='ALL']
 ${KU_A_invest_saveSmartImg} =  xpath=//*[@text='savesmart']
 ${KU_A_invest_SS_tilesTitle} =  xpath=//*[@text='SaveSmart']
 ${KU_A_invest_SS_screenSubTitle} =  xpath=//*[@text='Liquid fund returns, higher instant withdrawal\n(upto ₹2 lakhs or 90% of holdings within 30 min)']
@@ -86,6 +87,9 @@ ${KU_A_invest_infoImg} =  xpath=//*[@text='info']
 ${KU_A_invest_ascArrow1} =  xpath=(//*[@text='table-asc'])[1]
 ${KU_A_invest_ascArrow2} =  xpath=(//*[@text='table-asc'])[2]
 ${KU_A_invest_ascArrow3} =  xpath=(//*[@text='table-asc'])[3]
+${KU_A_invest_ascArrow4} =  xpath=(//*[@text='table-asc'])[4]
+${KU_A_invest_ascArrow5} =  xpath=(//*[@text='table-asc'])[5]
 ${KU_A_invest_descArrow1} =  xpath=(//*[@text='table-desc'])[1]
 ${KU_A_invest_descArrow2} =  xpath=(//*[@text='table-desc'])[2]
 ${KU_A_invest_descArrow3} =  xpath=(//*[@text='table-desc'])[3]
+${KU_A_invest_descArrow4} =  xpath=(//*[@text='table-desc'])[4]

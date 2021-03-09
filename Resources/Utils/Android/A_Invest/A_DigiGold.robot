@@ -53,22 +53,22 @@ Verify Sell Gold Details
     Verify Text On Page  ${e_gold_rupeeIcon}
     Verify Text On Page  ${e_gold_unit}
     Verify Page Contains Element On Android  ${KU_A_invest_DG_sell_SIPGoldImg}
-    Verify Text On Page  ${e_invest_DG_loginToSellGold}
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_loginToSellGold}
     Verify Login And Signup On Gold
 
 Verify SIP Gold Details
     Verify Page Contains Element On Android  ${KU_A_invest_DG_SIPImg}
     Verify Text On Page  ${e_invest_DG_SIPGold}
     Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_DG_loginToSIPGold}
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_loginToSellGold}
     Verify Page Contains Element On Android  ${KU_A_invest_DG_sell_SIPGoldImg}
     Verify Login And Signup On Gold
 
 Verify Track Details
     Verify Page Contains Element On Android  ${KU_A_invest_DG_trackImg}
-    Verify Text On Page  ${e_invest_DG_addGoldPurchased}
+    Verify Text On Page  ${e_invest_DG_SIPGold}
     Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_DG_loginToAddGold}
+    Verify Page Contains Element On Android  ${KU_A_invest_DG_loginToSIPGold}
     Verify Page Contains Element On Android  ${KU_A_invest_DG_sell_SIPGoldImg}
     Verify Login And Signup On Gold
 

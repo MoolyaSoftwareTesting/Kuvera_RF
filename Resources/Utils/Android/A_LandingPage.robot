@@ -25,7 +25,7 @@ PreLogin Header Navigation On Android
     ${remit}  Get Json Values On Android  $.MenuHeaders.h3  Resources/TestData/Headers.json
     ${features}  Get Json Values On Android  $.MenuHeaders.h4  Resources/TestData/Headers.json
     
-    Run keyword If  ['${e_loansPage}'] == ${loans}   Verify Android PreLogin Loans Page
+    Run keyword If  ['${e_loansPage}'] == ${loans}  Verify Android PreLogin Loans Page
     Run keyword If  ['${e_insurePage}'] == ${insure}  Verify Android PreLogin Insure Page
     Run keyword If  ['${e_remitPage}'] == ${remit}  Verify Android PreLogin Remit Page
     ...    ELSE   Log To Console  Covered in other test
