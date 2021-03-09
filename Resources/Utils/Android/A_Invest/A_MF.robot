@@ -28,12 +28,11 @@ Verify Fund Details Screen On Android
     ${mutualFund4}  Get Json Values On Android  $.MutualFunds.f4  Resources/TestData/MutualFunds.json 
     ${mutualFund5}  Get Json Values On Android  $.MutualFunds.f5  Resources/TestData/MutualFunds.json 
 
-    Run Keyword If  ['${e_invest_MF_mf1}'] == ${mutualFund1}  Verify First MF Details Page  ${mutualFund1}
-    Run Keyword If  ['${e_invest_MF_mf2}'] == ${mutualFund2}  Verify Second MF Details Page
-    Run keyword If  ['${e_invest_MF_mf3}'] == ${mutualFund3}  Verify Third MF Details Page
-    Run keyword If  ['${e_invest_MF_mf4}'] == ${mutualFund4}  Verify Fourth MF Details Page
-    Run keyword If  ['${e_invest_MF_mf5}'] == ${mutualFund5}  Verify Fifth MF Details Page
-    ...    ELSE  Log To Console  Completed
+    Verify First MF Details Page  ${mutualFund1}
+    Verify Second MF Details Page  ${mutualFund2}
+    Verify Third MF Details Page  ${mutualFund3}
+    Verify Fourth MF Details Page  ${mutualFund4}
+    Verify Fifth MF Details Page  ${mutualFund5} 
     
     
 Verify Search Functionality
@@ -44,17 +43,17 @@ Verify Search Functionality
     Wait And Click Element On Android  ${KU_A_invest_MF_searchIcon}
 
 Verify First MF Details Page
-    [Arguments]  ${MFName}
-    Log To Console  ${e_invest_MF_mf1}
+    [Arguments]  ${MFName1}
+    Log To Console  ${MFName1}
     Wait And Click Element On Android  ${KU_A_invest_MF_dividendIcon}
-    Verify Search Functionality  ${MFName}
+    Verify Search Functionality  ${MFName1}
     Wait And Click Element On Android  ${KU_A_invest_MF_mf1}
     Verify Text On Page  ${e_invest_MF_mf1}
-    Verify Filters For Mirae Tata ICICI And LIC MF  ${KU_A_invest_MF_equityBtn}  ${KU_A_invest_MF_sectoralBtn}
+    Verify Filters For MF  ${KU_A_invest_MF_equityBtn}  ${KU_A_invest_MF_sectoralBtn}
     Verify WatchList Button Of Invest
     Verify Period Wise Graphs 
     Verify AUM And TER info
-    Verify Invest Now Button
+    Verify Invest Now Button  ${e_invest_MF_mf1}  ${e_invest_MF_sipMinVal1}
     Verify Compare With Other Section  ${e_invest_MF_mf1Name}
     Verify Add Fund
     Verify Past Performance  ${KU_A_invest_MF_mf1}
@@ -62,32 +61,33 @@ Verify First MF Details Page
     Go Back
     
 Verify Second MF Details Page
-    Log To Console  ${e_invest_MF_mf2}
-    Verify Search Functionality  ${e_invest_MF_mf2}
+    [Arguments]  ${MFName2}
+    Log To Console  ${MFName2}
+    Verify Search Functionality  ${MFName2}
     Wait And Click Element On Android  ${KU_A_invest_MF_mf2}
     Verify Text On Page  ${e_invest_MF_mf2}
     Verify Filters For Axis Bluechip
     Verify WatchList Button Of Invest
     Verify Period Wise Graphs 
     Verify AUM And TER info
-    Verify Invest Now Button
+    Verify Invest Now Button  ${e_invest_MF_mf2}  ${e_invest_MF_sipMinVal1}
     Verify Compare With Other Section  ${e_invest_MF_mf2Name}
-    Swipe By Percent  50  50  40  40  9000
     Verify Add Fund
     Verify Past Performance  ${KU_A_invest_MF_mf2}
     Verify See Fund holdings And Other Info
     Go Back
     
 Verify Third MF Details Page
-    Log To Console  ${e_invest_MF_mf3}
-    Verify Search Functionality  ${e_invest_MF_mf3}
+    [Arguments]  ${MFName3}
+    Log To Console  ${MFName3}
+    Verify Search Functionality  ${MFName3}
     Wait And Click Element On Android  ${KU_A_invest_MF_mf3}
     Verify Text On Page  ${e_invest_MF_mf3}
-    Verify Filters For Mirae Tata ICICI And LIC MF  ${KU_A_invest_MF_hybridBtn}  ${KU_A_invest_MF_aggHybridBtn}
+    Verify Filters For MF  ${KU_A_invest_MF_hybridBtn}  ${KU_A_invest_MF_aggHybridBtn}
     Verify WatchList Button Of Invest
     Verify Period Wise Graphs 
     Verify AUM And TER info
-    Verify Invest Now Button
+    Verify Invest Now Button  ${e_invest_MF_mf3}  ${e_invest_MF_sipMinVal2}
     Verify Compare With Other Section  ${e_invest_MF_mf3Name}
     Swipe By Percent  50  50  20  20  9000
     Verify Past Performance For Mirae Asset  ${KU_A_invest_MF_mf3}
@@ -95,40 +95,39 @@ Verify Third MF Details Page
     Go Back
 
 Verify Fourth MF Details Page
-    Log To Console  ${e_invest_MF_mf4}
-    Verify Search Functionality  ${e_invest_MF_mf4}
+    [Arguments]  ${MFName4}
+    Log To Console  ${MFName4}
+    Verify Search Functionality  ${MFName4}
     Wait And Click Element On Android  ${KU_A_invest_MF_mf4}
     Verify Text On Page  ${e_invest_MF_mf4}
-    Verify Filters For Mirae Tata ICICI And LIC MF  ${KU_A_invest_MF_solutionOrientedBtn}  ${KU_A_invest_MF_childrensFundBtn}
+    Verify Filters For MF  ${KU_A_invest_MF_solutionOrientedBtn}  ${KU_A_invest_MF_childrensFundBtn}
     Verify WatchList Button Of Invest
     Verify Period Wise Graphs 
     Verify AUM And TER info
-    Verify Invest Now Button
+    Verify Invest Now Button  ${e_invest_MF_mf4}  ${e_invest_MF_sipMinVal2}
     Verify Compare With Other Section  ${e_invest_MF_mf4Name}
-    Swipe By Percent  50  50  40  40  9000
     Verify Add Fund
     Verify Past Performance  ${KU_A_invest_MF_mf4}
     Verify See Fund holdings And Other Info
     Go Back
 
 Verify Fifth MF Details Page
-    Log To Console  ${e_invest_MF_mf5}
+    [Arguments]  ${MFName5}
+    Log To Console  ${MFName5}
+    Verify Search Functionality  ${MFName5}
     Verify Search Functionality  ${e_invest_MF_mf5}
     Wait And Click Element On Android  ${KU_A_invest_MF_mf5}
     Verify Text On Page  ${e_invest_MF_mf5}
-    Verify Filters For Mirae Tata ICICI And LIC MF  ${KU_A_invest_MF_debtBtn}  ${KU_A_invest_MF_ICICIfilter2Btn}
+    Verify Filters For MF  ${KU_A_invest_MF_debtBtn}  ${KU_A_invest_MF_ICICIfilter2Btn}
     Verify WatchList Button Of Invest
     Verify Period Wise Graphs 
     Verify AUM And TER info
-    Verify Invest Now Button
+    Verify Invest Now Button  ${e_invest_MF_mf5}  ${e_invest_MF_sipMinVal2}
     Verify Compare With Other Section  ${e_invest_MF_mf5Name}
-    Swipe By Percent  50  50  40  40  9000
     Verify Add Fund
     Verify Past Performance  ${KU_A_invest_MF_mf5}
     Verify See Fund holdings And Other Info
     Go Back
-
-
 
 Verify WatchList Button Of Invest
     Wait And Click Element On Android  ${KU_A_watchListBtn}
@@ -161,10 +160,11 @@ Verify AUM And TER info
     Go Back
 
 Verify Invest Now Button
+    [Arguments]  ${MFName}  ${SIPminVal}
     Wait And Click Element On Android  ${KU_A_invest_MF_investNowBtn}
-    Verify Text On Page  ${e_invest_MF_mf1}
+    Verify Text On Page  ${MFName}
     Verify Text On Page  ${e_invest_MF_sipAmt}
-    Verify Text On Page  ${e_invest_MF_sipMinVal} 
+    Verify Text On Page  ${SIPminVal} 
     Wait And Click Element On Android  ${KU_A_invest_MF_SIPInputField}
     Input Text  ${KU_A_invest_MF_SIPInputField}  ${e_invest_MF_sipVal}
     Hide Keyboard
@@ -210,7 +210,7 @@ Verify Compare With Other Section
     END
 
 Verify Add Fund
-    # Add Fund
+    Swipe By Percent  50  50  40  40  9000
     Wait And Click Element On Android  ${KU_A_invest_MF_addFundBtn}
     Sleep  1s
     Verify Page Contains Element On Android  ${KU_A_invest_MF_searchFundLabel} 
@@ -284,7 +284,7 @@ Verify Filters For Axis Bluechip
     Verify Page Contains Element On Android  ${KU_A_invest_watchlistMenu}
     Go Back
 
-Verify Filters For Mirae Tata ICICI And LIC MF
+Verify Filters For MF
     [Arguments]  ${filter1}  ${filter2}
     Wait And Click Element On Android  ${filter1}
     Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}

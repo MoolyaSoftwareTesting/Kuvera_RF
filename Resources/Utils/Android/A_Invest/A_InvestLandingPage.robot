@@ -112,7 +112,7 @@ Verify Title And SubTitle Of SaveSmart
 
 Verify Presence Of Search Box WatchList Growth Button 
     Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
-    Verify Page Contains Element On Android  ${KU_A_invest_searchBox}
+    Verify Page Contains Element On Android  ${KU_A_inputField}
     Verify Text On Page  ${e_invest_growth}
     Verify Text On Page  ${e_invest_dividend}
     Verify Page Contains Element On Android  ${KU_A_watchListBtn}
@@ -126,7 +126,7 @@ Verify Search Box Sort And Watchlist Button For ELSS And Stocks
     Verify Text On Page  ${sortYear}
     Sleep  1s
     Wait And Click Element On Android  ${KU_A_invest_sortBtn}
-    Verify Page Contains Element On Android  ${KU_A_invest_searchBox}
+    Verify Page Contains Element On Android  ${KU_A_inputField}
     Verify Page Contains Element On Android  ${KU_A_watchListBtn}
     Wait And Click Element On Android  ${KU_A_watchListBtn}
 
