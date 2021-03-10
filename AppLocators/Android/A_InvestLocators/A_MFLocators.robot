@@ -63,7 +63,3 @@ ${KU_A_invest_MF_childrensFundBtn} =  xpath=//*[@text='Childrens Fund']
 ${KU_A_invest_MF_debtBtn} =  xpath=//*[@text='Debt']
 ${KU_A_invest_MF_ICICIfilter2Btn} =  xpath=//*[@text='Gilt Fund with 10 year constant duration']
 ${KU_A_invest_MF_SIP_lumpsum_InvestBtn} =  xpath=(//*[@text='Invest now'])[2]
-
-
-
-
