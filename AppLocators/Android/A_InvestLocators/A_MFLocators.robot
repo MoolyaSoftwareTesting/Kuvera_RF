@@ -16,7 +16,6 @@ ${e_invest_MF_lumpsumAmt} =  Lumpsum amount
 ${e_invest_MF_minLumpsumAmt} =  Min. ₹5,000
 ${e_invest_MF_lumpsumval} =  6000
 ${e_invest_MF_compareWithOtherLabel} =  Compare with other fund
-${e_invest_MF_mf1Name} =  Tata Digital India (...
 ${e_invest_MF_pastPerformDesc} =  Past performance is no guarantee of future returns.
 ${e_invest_MF_hadUInvestedLabel} =  Had you invested
 ${e_invest_MF_investedAmt} =  100000
@@ -27,20 +26,11 @@ ${e_invest_MF_topHoldings} =  Top holdings
 ${e_invest_MF_minSIPLabel} =  Minimum SIP
 ${e_invest_MF_minLumpsumLabel} =  Minimum lumpsum
 ${e_invest_MF_addLumpsumLabel} =  Additional lumpsum
-${e_invest_MF_mf2Name} =  Axis Bluechip (G)
-${e_invest_MF_mf3Name} =  Mirae Hybrid Equity ...
-${e_invest_MF_mf4Name} =  LIC MF Childrens (G)
-${e_invest_MF_mf5Name} =  ICICI Pru Constant M...
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_MF_imgfromExplore} =  xpath=//*[@text='mf']
 ${KU_A_invest_MF_title} =  xpath=//*[@text='MF']
 ${KU_A_invest_MF_dividendIcon} =  xpath=//*[@text='Dividend']
-${KU_A_invest_MF_mf1} =  xpath=//*[@text='Tata Digital India (DR)']
-${KU_A_invest_MF_mf2} =  xpath=//*[@text='Axis Bluechip (G)']
-${KU_A_invest_MF_mf3} =  xpath=//*[@text='Mirae Hybrid Equity (G)']
-${KU_A_invest_MF_mf4} =  xpath=//*[@text='LIC MF Childrens (G)']
-${KU_A_invest_MF_mf5} =  xpath=//*[@text='ICICI Pru Constant Maturity Gilt (G)']
 ${KU_A_invest_MF_equityBtn} =  xpath=//*[@text='Equity']
 ${KU_A_invest_MF_largeCapBtn} =  xpath=//*[@text='Large Cap Fund']
 ${KU_A_invest_MF_topWatchlistedBtn} =  xpath=//*[@text='Top watchlisted']

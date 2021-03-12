@@ -11,13 +11,13 @@ Verify Android PreLogin MF Page
     Verify Page Contains Element On Android  ${KU_A_invest_MF_imgfromExplore}
     Verify Page Contains Element On Android  ${KU_A_invest_MF_title}
     Wait And Click Element On Android  ${KU_A_invest_MF_title}
-    # Verify Signup Link And Kuvera Logo
-    # Verify Sort And Filter Button  ${e_invest_MF_filter}
-    # Verify Presence Of Search Box WatchList Growth Button 
-    # Verify Navigation To Tabs For Funds
-    # Go Back
-    # Go Back
-    # Wait And Click Element On Android  ${KU_A_invest_MF_title}
+    Verify Signup Link And Kuvera Logo
+    Verify Sort And Filter Button  ${e_invest_MF_filter}
+    Verify Presence Of Search Box WatchList Growth Button 
+    Verify Navigation To Tabs For Funds
+    Go Back
+    Go Back
+    Wait And Click Element On Android  ${KU_A_invest_MF_title}
     FOR  ${i}  IN RANGE  1  6
         # Iterate the Mutual Fund detail screen
         ${mutualFund}  Get Json Values On Android  $.MFs.f${i}  Resources/TestData/A_MutualFunds.json 
@@ -29,42 +29,40 @@ Verify Android PreLogin MF Page
 Verify Mutual Fund Details Page On Android
     [Arguments]  ${mutualFund}
     Run Keyword If  ${mutualFund} == ['${e_invest_MF_mf1}']  Wait And Click Element On Android  ${KU_A_invest_MF_dividendIcon}
-    Log To Console  =================
     ${mutualFund1} =  Convert To String  ${mutualFund}
     ${mutualFund2} =  Replace String  ${mutualFund1}  ['  ${EMPTY}
     ${mutualFundName} =  Replace String  ${mutualFund2}  ']  ${EMPTY}
-    Log To Console  ${mutualFundName}
-    Log To Console  ******************
     Verify Search Functionality  ${mutualFundName}
     ${text} =    Set Variable   xpath=(//*[@text=
     ${fundName} =    Set Variable   '${mutualFundName}'])[2]
     ${mfName} =    Set Variable   ${text}${fundName}
-    Log To Console  ${mfName}
     Verify Page Contains Element On Android  ${mfName}
     Wait And Click Element On Android  ${mfName}
     # Since the filters are different for different funds and in android we have to go with text - it has been skipped as of now
     # IF  ${mutualFund} == ['${e_invest_MF_mf1}']
     #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_equityBtn}  ${KU_A_invest_MF_sectoralBtn}  ${KU_A_invest_allFundsMenu}
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf2}]  
+    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf2}']  
     #     Verify Filter Navigation For Second MF 
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf3}]  
+    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf3}']  
     #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_hybridBtn}  ${KU_A_invest_MF_aggHybridBtn}  ${KU_A_invest_allFundsMenu}
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf4}] 
+    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf4}'] 
     #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_solutionOrientedBtn}  ${KU_A_invest_MF_childrensFundBtn}  ${KU_A_invest_allFundsMenu}
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf5}] 
+    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf5}'] 
     #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_debtBtn}  ${KU_A_invest_MF_ICICIfilter2Btn}  ${KU_A_invest_allFundsMenu}
     # END 
     Verify WatchList Button Of Invest
     Verify Period Wise Graphs  ${KU_A_invest_1MBtn}  ${KU_A_invest_6MBtn}  ${KU_A_invest_1YBtn}  ${KU_A_invest_3YBtn}  ${KU_A_invest_5YBtn}
     Verify AUM And TER info
-    Verify Invest Now Button  ${e_invest_MF_sipMinVal1}
+    Verify Invest Now Button
     # Compare to Other section has also fund name in different format for different funds - it has been skipped now
     # Verify Compare With Other Section  ${e_invest_MF_compareWithOtherLabel}  ${mfName}
+    Swipe By Percent  90  90  50  50  9000
     Verify Add Fund
     IF  ${mutualFund} == ['${e_invest_MF_mf3}']
         Verify Past Performance For Third MF 
     ELSE 
         Verify Past Performance
+    END
     Verify See Fund holdings And Other Info
     Go Back
 
@@ -82,10 +80,8 @@ Verify AUM And TER info
     Go Back
 
 Verify Invest Now Button
-    [Arguments]  ${SIPminVal}
     Wait And Click Element On Android  ${KU_A_invest_MF_investNowBtn}
     Verify Text On Page  ${e_invest_MF_sipAmt}
-    Verify Text On Page  ${SIPminVal} 
     Wait And Click Element On Android  ${KU_A_invest_MF_SIPInputField}
     Input Text  ${KU_A_invest_MF_SIPInputField}  ${e_invest_MF_sipVal}
     Hide Keyboard
