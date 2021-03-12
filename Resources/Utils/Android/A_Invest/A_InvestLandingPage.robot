@@ -249,10 +249,10 @@ Verify Search Functionality
 Verify Filters For MF And Stocks
     [Arguments]  ${filter1}  ${filter2}  ${allFund_stockMenu}
     Wait And Click Element On Android  ${filter1}
-    Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
+    Verify Page Contains Element On Android  ${allFund_stockMenu}
     Go Back
     Wait And Click Element On Android  ${filter2}
-    Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
+    Verify Page Contains Element On Android  ${allFund_stockMenu}
     Go Back
 
 Verify Period Wise Graphs  
