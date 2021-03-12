@@ -1,11 +1,11 @@
 *** Variables ***
 # Application Expected Values 'e_<VariableName>'
 ${e_invest_MF_filter} =  All
-${e_invest_MF_mf1} =  Tata Digital India Dividend Reinvest Direct Plan
-${e_invest_MF_mf2} =  Axis Bluechip Growth Direct Plan
-${e_invest_MF_mf3} =  Mirae Asset Hybrid Equity Growth Direct Plan
-${e_invest_MF_mf4} =  LIC MF Childrens Growth Direct Plan
-${e_invest_MF_mf5} =  ICICI Prudential Constant Maturity Gilt Growth Direct Plan
+${e_invest_MF_mf1} =  Tata Digital India (DR)
+${e_invest_MF_mf2} =  Axis Bluechip (G)
+${e_invest_MF_mf3} =  Mirae Hybrid Equity (G)
+${e_invest_MF_mf4} =  LIC MF Childrens (G)
+${e_invest_MF_mf5} =  ICICI Pru Constant Maturity Gilt (G)
 ${e_invest_MF_AUM} =  AUM 
 ${e_invest_MF_TER} =  TER 
 ${e_invest_MF_sipAmt} =  SIP amount
@@ -35,7 +35,6 @@ ${e_invest_MF_mf5Name} =  ICICI Pru Constant M...
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_MF_imgfromExplore} =  xpath=//*[@text='mf']
 ${KU_A_invest_MF_title} =  xpath=//*[@text='MF']
-${KU_A_invest_MF_searchIcon} =  xpath=//*[@text='search-icon-active']
 ${KU_A_invest_MF_dividendIcon} =  xpath=//*[@text='Dividend']
 ${KU_A_invest_MF_mf1} =  xpath=//*[@text='Tata Digital India (DR)']
 ${KU_A_invest_MF_mf2} =  xpath=//*[@text='Axis Bluechip (G)']

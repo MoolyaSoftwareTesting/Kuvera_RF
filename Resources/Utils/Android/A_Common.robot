@@ -3,6 +3,7 @@
 Library     JSONLibrary
 Library     JsonValidator
 Library     AppiumLibrary
+Library     String
 Resource   ../../../AppLocators/Android/A_CommonAppLocators.robot
 Resource   ../../../AppLocators/Android/A_MenuNavigationLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_InvestLandingPageLocators.robot
@@ -19,6 +20,7 @@ Resource   ../../../AppLocators/Android/A_InvestLocators/A_CryptoLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_DigiGoldLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_BankPSUBondsLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_MFLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_StocksLocators.robot
 
 *** Keywords ***
 
@@ -168,6 +170,11 @@ Open Bot And Validate Question On Android
 Press Enter Key On Android
     [Arguments]  ${element}  
     Press Keys  ${element}  ENTER
+
+Replace Characters On Android
+    [Arguments]  ${text}  ${char1}  ${char2}
+    ${replacedString} =  Replace String  ${text}  ${char1}  ${char2}
+    [Return]  ${replacedString}
     
 Quit Kuvera Application
     Quit Application

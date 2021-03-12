@@ -25,7 +25,7 @@ Verify Android PreLogin Digi Gold Page
     Verify Track Details
     # Buy
     Log To Console  Buy
-    Wait And Click Element On Android  ${KU_A_invest_DG_buyIcon}
+    Wait And Click Element On Android  ${KU_A_invest_buyIcon}
     Verify Page Contains Element On Android  ${KU_A_invest_DG_buyImg}
     Verify Buy Gold Menu Details
     Verify Login Page And Go Back 

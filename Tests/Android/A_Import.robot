@@ -29,5 +29,6 @@ Resource    ../../Resources/Utils/Android/A_Invest/A_DigiGold.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_Crypto.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_FD.robot
 Resource    ../../Resources/Utils/Android/A_Invest/A_MutualFunds.robot
+Resource    ../../Resources/Utils/Android/A_Invest/A_Stocks.robot
 Resource    ../../Resources/Utils/Android/A_Login.robot
 Resource    ../../Resources/Utils/Android/A_Signup.robot

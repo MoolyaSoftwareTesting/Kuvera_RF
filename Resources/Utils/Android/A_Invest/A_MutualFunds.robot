@@ -2,6 +2,7 @@
 
 Library     AppiumLibrary
 
+
 *** Keywords ***
 
 Verify Android PreLogin MF Page
@@ -19,34 +20,42 @@ Verify Android PreLogin MF Page
     # Wait And Click Element On Android  ${KU_A_invest_MF_title}
     FOR  ${i}  IN RANGE  1  6
         # Iterate the Mutual Fund detail screen
-        ${mutualFund}  Get Json Values On Android  $.MutualFunds.f${i}  Resources/TestData/MutualFunds.json 
+        ${mutualFund}  Get Json Values On Android  $.MFs.f${i}  Resources/TestData/A_MutualFunds.json 
         Log To Console  ${mutualFund}
-        ${expectedTitle1} =  Replace Characters  ${mutualFund}  '  " "
-        Log To Console  ${expectedTitle1}
-        # Verify Mutual Fund Details Page On Android  ${mutualFund}
+        Verify Mutual Fund Details Page On Android  ${mutualFund}
     END
 
-Verify Search Functionality
-    [Arguments]  ${fundName}
-    Wait And Click Element On Android  ${KU_A_inputField}
-    Input Text  ${KU_A_inputField}  ${fundName}
-    Sleep  1s
-    Wait And Click Element On Android  ${KU_A_invest_MF_searchIcon}
 
 Verify Mutual Fund Details Page On Android
     [Arguments]  ${mutualFund}
-    Verify Search Functionality  ${mutualFund}
-    Run Keyword If  ${mutualFund} == ['Tata Digital']  Wait And Click Element On Android  ${KU_A_invest_MF_dividendIcon}
-    ${mfName} =  xpath=//*[contains(text(),'${mutualFund}')]
-    ${KU_A_inputField} =  xpath=//*[@class='android.widget.EditText']
+    Run Keyword If  ${mutualFund} == ['${e_invest_MF_mf1}']  Wait And Click Element On Android  ${KU_A_invest_MF_dividendIcon}
+    Log To Console  =================
+    ${mutualFund1} =  Convert To String  ${mutualFund}
+    ${mutualFund2} =  Replace String  ${mutualFund1}  ['  ${EMPTY}
+    ${mutualFundName} =  Replace String  ${mutualFund2}  ']  ${EMPTY}
+    Log To Console  ${mutualFundName}
+    Log To Console  ******************
+    Verify Search Functionality  ${mutualFundName}
+    ${text} =    Set Variable   xpath=(//*[@text=
+    ${fundName} =    Set Variable   '${mutualFundName}'])[2]
+    ${mfName} =    Set Variable   ${text}${fundName}
+    Log To Console  ${mfName}
     Verify Page Contains Element On Android  ${mfName}
-    # Run Keyword If  ${mutualFund} == ['Axis Bluechip']  Verify Filter Navigation For Second MF 
-    # ...    ELSE  Verify Filters For MF
+    Wait And Click Element On Android  ${mfName}
+    IF  ${mutualFund} == ['${e_invest_MF_mf2}]  
+        Verify Filter Navigation For Second MF 
+    ELSE IF  ${mutualFund} == ['${e_invest_MF_mf3}]  
+        Verify Filters For MF  ${KU_A_invest_MF_hybridBtn}  ${KU_A_invest_MF_aggHybridBtn}
+    ELSE IF  ${mutualFund} == ['${e_invest_MF_mf4}] 
+        Verify Filters For MF  ${KU_A_invest_MF_solutionOrientedBtn}  ${KU_A_invest_MF_childrensFundBtn}
+    ELSE IF  ${mutualFund} == ['${e_invest_MF_mf5}] 
+        Verify Filters For MF  ${KU_A_invest_MF_debtBtn}  ${KU_A_invest_MF_ICICIfilter2Btn}
+    END 
     Verify WatchList Button Of Invest
-    Verify Period Wise Graphs 
+    Verify Period Wise Graphs  ${KU_A_invest_1MBtn}  ${KU_A_invest_6MBtn}  ${KU_A_invest_1YBtn}  ${KU_A_invest_3YBtn}  ${KU_A_invest_5YBtn}
     Verify AUM And TER info
-    Verify Invest Now Button  ${mfName}  ${e_invest_MF_sipMinVal1}
-    Verify Compare With Other Section  ${mfName}
+    Verify Invest Now Button  ${e_invest_MF_sipMinVal1}
+    Verify Compare With Other Section  ${e_invest_MF_compareWithOtherLabel}  ${mfName}
     Verify Add Fund
     Verify Past Performance  ${mfName}
     Verify See Fund holdings And Other Info
@@ -57,23 +66,6 @@ Verify WatchList Button Of Invest
     Verify Page Contains Element On Android  ${KU_A_invest_funds_watchlistTitle}
     Go Back
     
-Verify Period Wise Graphs  
-    Wait And Click Element On Android  ${KU_A_invest_1MBtn}
-    Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_graphImg}
-    Wait And Click Element On Android  ${KU_A_invest_6MBtn}
-    Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_graphImg}
-    Wait And Click Element On Android  ${KU_A_invest_1YBtn}
-    Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_graphImg}
-    Wait And Click Element On Android  ${KU_A_invest_3YBtn}
-    Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_graphImg}
-    Wait And Click Element On Android  ${KU_A_invest_5YBtn}
-    Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_graphImg}
-
 Verify AUM And TER info
     Verify Text On Page  ${e_invest_MF_AUM}
     Wait And Click Element On Android  ${KU_A_invest_infoImg}
@@ -83,9 +75,8 @@ Verify AUM And TER info
     Go Back
 
 Verify Invest Now Button
-    [Arguments]  ${MFName}  ${SIPminVal}
+    [Arguments]  ${SIPminVal}
     Wait And Click Element On Android  ${KU_A_invest_MF_investNowBtn}
-    Verify Page Contains Element On Android  ${MFName}
     Verify Text On Page  ${e_invest_MF_sipAmt}
     Verify Text On Page  ${SIPminVal} 
     Wait And Click Element On Android  ${KU_A_invest_MF_SIPInputField}
@@ -101,36 +92,6 @@ Verify Invest Now Button
     Wait And Click Element On Android  ${KU_A_invest_MF_addToCartBtn}
     Verify Login Page And Go Back
     Go Back
-
-Verify Compare With Other Section
-    Swipe By Percent  90  90  50  50  9000
-    [Arguments]  ${fundName}
-    Verify Text On Page  ${e_invest_MF_compareWithOtherLabel} 
-    Verify Page Contains Element On Android  ${fundName}
-    Wait And Click Element On Android  ${KU_A_invest_ascArrow1}
-    Verify Page Contains Element On Android  ${fundName}
-    Wait And Click Element On Android  ${KU_A_invest_descArrow1}
-    Verify Page Contains Element On Android  ${fundName} 
-    Wait And Click Element On Android  ${KU_A_invest_ascArrow2}
-    Verify Page Contains Element On Android  ${fundName}
-    Wait And Click Element On Android  ${KU_A_invest_descArrow2}
-    Verify Page Contains Element On Android  ${fundName} 
-    Swipe By Percent  75  75  30  75  15000
-    Wait And Click Element On Android  ${KU_A_invest_ascArrow3}
-    Verify Page Contains Element On Android  ${fundName}
-    Wait And Click Element On Android  ${KU_A_invest_descArrow2}
-    Verify Page Contains Element On Android  ${fundName} 
-    FOR  ${j}  IN RANGE  1  3
-        Wait And Click Element On Android  ${KU_A_invest_ascArrow4}
-        Verify Page Contains Element On Android  ${fundName}
-        Wait And Click Element On Android  ${KU_A_invest_descArrow3}
-        Verify Page Contains Element On Android  ${fundName} 
-        Wait And Click Element On Android  ${KU_A_invest_ascArrow5}
-        Verify Page Contains Element On Android  ${fundName}
-        Wait And Click Element On Android  ${KU_A_invest_descArrow4}
-        Verify Page Contains Element On Android  ${fundName} 
-        Swipe By Percent  75  75  30  75  15000
-    END
 
 Verify Add Fund
     Swipe By Percent  50  50  40  40  9000
@@ -205,13 +166,4 @@ Verify Filter Navigation For Second MF
     Swipe By Percent  50  20  30  20  15000
     Wait And Click Element On Android  ${KU_A_invest_MF_topWatchlistedBtn}
     Verify Page Contains Element On Android  ${KU_A_invest_watchlistMenu}
-    Go Back
-
-Verify Filters For MF
-    [Arguments]  ${filter1}  ${filter2}
-    Wait And Click Element On Android  ${filter1}
-    Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
-    Go Back
-    Wait And Click Element On Android  ${filter2}
-    Verify Page Contains Element On Android  ${KU_A_invest_allFundsMenu}
     Go Back

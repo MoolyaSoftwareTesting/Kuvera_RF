@@ -34,28 +34,27 @@
         "fh3fundmanaged":"Funds managed by Baroda",
         "fh3title":"Home | Welcome to Baroda Mutual Fund"
         },
-        "BhARTI AXA":{
-        "fh4name":"BHARTI AXA MUTUAL FUND",
-        "fh4header":"BOI AXA Investment Managers Private Limited is a joint venture between Bank of India and AXA Investment Managers, a part of AXA Group, one of the world’s largest players in the Financial Protection industry.Bank of India has over 5000 branches across India. Presently Bank of India has an overseas presence in 22 countries spread over 5 continents with 60 offices including 5 Subsidiaries, 5 Representative Offices and 1 Joint Venture.",
-        "fh4RTA":"Karvy",
-        "fh4website":"https://www.boiaxamf.com/",
-        "fh4address":"B/204, Tower 1, Peninsula Corporate Park, Ganpatrao Kadam Marg, Lower Parel, Mumbai 400013",
-        "fh4phone":"1800-266-2676",
-        "fh4email":"service@boiaxa-im.com",
-        "fh4investorlogin":"BHARTI AXA investors can login here.",
-        "fh4fundmanaged":"Funds managed by BHARTI AXA",
-        "fh4title":"BOI AXA Mutual Fund | Investing made Easy"
-        },
         "BNP PARIBAS":{
-        "fh5name":"BNP PARIBAS MUTUAL FUND",
-        "fh5header":"BNP Paribas Asset Management is the dedicated asset management business line of BNP Paribas and backed by the financial strength of one of the best rated banks in the world. BNP Paribas Asset Management manages and advises assets of over EUR 565* bn across 30+ countries with significant presence in Europe, Asia and the Americas. It is among the leading asset managers in the world, offering one of the widest range of investment solutions in the industry.",
-        "fh5RTA":"Sundaram BNP Paribas Fund Services",
-        "fh5website":"https://www.bnpparibasmf.in/",
-        "fh5address":"BNP Paribas House, 3/1 North Avenue, Maker Maxity, Bandra Kurla Complex, Bandra (E) Mumbai 400051",
-        "fh5phone":"022-33704000",
-        "fh5email":"customer.care@bnpparibasmf.in",
-        "fh5investorlogin":"BNP PARIBAS investors can login here.",
-        "fh5fundmanaged":"Funds managed by BNP PARIBAS"
+        "fh4name":"BNP PARIBAS MUTUAL FUND",
+        "fh4header":"BNP Paribas Asset Management is the dedicated asset management business line of BNP Paribas and backed by the financial strength of one of the best rated banks in the world. BNP Paribas Asset Management manages and advises assets of over EUR 565* bn across 30+ countries with significant presence in Europe, Asia and the Americas. It is among the leading asset managers in the world, offering one of the widest range of investment solutions in the industry.",
+        "fh4RTA":"Sundaram BNP Paribas Fund Services",
+        "fh4website":"https://www.bnpparibasmf.in/",
+        "fh4address":"BNP Paribas House, 3/1 North Avenue, Maker Maxity, Bandra Kurla Complex, Bandra (E) Mumbai 400051",
+        "fh4phone":"022-33704000",
+        "fh4email":"customer.care@bnpparibasmf.in",
+        "fh4investorlogin":"BNP PARIBAS investors can login here.",
+        "fh4fundmanaged":"Funds managed by BNP PARIBAS"
+        },
+        "BOI AXA":{
+        "fh5name":"BOI AXA MUTUAL FUND",
+        "fh5header":"BOI AXA Investment Managers Private Limited is a joint venture between Bank of India and AXA Investment Managers, a part of AXA Group, one of the world’s largest players in the Financial Protection industry.Bank of India has over 5000 branches across India. Presently Bank of India has an overseas presence in 22 countries spread over 5 continents  with 60 offices including 5 Subsidiaries, 5 Representative Offices and 1 Joint Venture.",
+        "fh5RTA":"Karvy",
+        "fh5website":"https://www.boiaxamf.com/",
+        "fh5address":"B/204, Tower 1, Peninsula Corporate Park, Ganpatrao Kadam Marg, Lower Parel, Mumbai 400013",
+        "fh5phone":"1800-266-2676",
+        "fh5email":"service@boiaxa-im.com",
+        "fh5investorlogin":"BOI AXA  investors can login here.",
+        "fh5fundmanaged":"Funds managed by BOI AXA"
         },
         "CANARA ROBECO":{
         "fh6name":"CANARA ROBECO MUTUAL FUND",
