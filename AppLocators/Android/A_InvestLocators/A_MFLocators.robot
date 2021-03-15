@@ -26,6 +26,15 @@ ${e_invest_MF_topHoldings} =  Top holdings
 ${e_invest_MF_minSIPLabel} =  Minimum SIP
 ${e_invest_MF_minLumpsumLabel} =  Minimum lumpsum
 ${e_invest_MF_addLumpsumLabel} =  Additional lumpsum
+${e_invest_MF_growthLabel} =  Growth
+${e_invest_MF_pruLabel} =  Pru
+${e_invest_MF_assetLabel} =  Asset
+${e_invest_MF_growthDirectPlan} =  Growth Direct Plan
+${e_invest_MF_growthDirectPlanShort} =  (G)
+${e_invest_MF_dividendDirectPlan} =  Dividend Reinvest Direct Plan
+${e_invest_MF_dividendDirectPlanShort} =  (DR)
+${e_invest_MF_prudential} =  Prudential
+
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_MF_imgfromExplore} =  xpath=//*[@text='mf']
@@ -41,7 +50,8 @@ ${KU_A_invest_MF_addFundBtn} =  xpath=//*[@text='Add fund']
 ${KU_A_invest_MF_searchFundLabel} =  xpath=//*[@text='Search and add fund']
 ${KU_A_invest_MF_closePopup} =  xpath=//*[@text='close-nav-mobile']
 ${KU_A_invest_MF_pastPerformance} =  xpath=//*[@text='Past performance']
-${KU_A_invest_MF_seeFundHoldings} =  xpath=//*[@text='See fund holdings as of 31st Jan']
+${KU_A_invest_MF_fundHoldingsArrow} =  xpath=//*[@text='See fund holdings as of 28th Feb']
+${KU_A_invest_MF_fundHoldingsClosingArrow} =  xpath=//*[@text='top-arrow-light-1']
 ${KU_A_invest_MF_otherInfo} =  xpath=//*[@text='Other information']
 ${KU_A_invest_MF_SIPInputField} =  xpath=(//*[@class='android.widget.EditText'])[1]
 ${KU_A_invest_MF_lumpsumInputField} =  xpath=(//*[@class='android.widget.EditText'])[2]

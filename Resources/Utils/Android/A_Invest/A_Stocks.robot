@@ -27,17 +27,15 @@ Verify Android PreLogin Stocks Page
 
 Verify Stocks Details Page On Android
     [Arguments]  ${stocks}
-    ${stocks1} =  Convert To String    ${stocks}
-    ${stocks2} =  Replace String  ${stocks1}  ['  ${EMPTY}
-    ${stocksName} =  Replace String  ${stocks2}  ']  ${EMPTY}
-    Log To Console  ${stocksName}
+    ${stocks1} =  Convert To String  ${stocks}
+    ${stockName} =  Get Fund Or Stock Name  ${stocks1}
     Verify Search Functionality  ${stocksName}
     ${text} =    Set Variable   xpath=(//*[@text=
     ${stockName} =    Set Variable   '${stocksName}'])[2]
     ${stkName} =    Set Variable   ${text}${stockName}
-    Log To Console  ${stkName}
     Verify Page Contains Element On Android  ${stkName}
     Wait And Click Element On Android  ${stkName}
+    Verify Text On Page  ${stockName}
     # Since the filters are different for different stocks and in android we have to go with text - it has been skipped as of now
     # Verify Filters For MF And Stocks  ${KU_A_invest_stocks_utilitiesBtn}  ${KU_A_invest_stocks_renewUtilityBtn}  ${KU_A_invest_allStocks}
     Wait And Click Element On Android  ${KU_A_invest_buyIcon}
@@ -48,7 +46,6 @@ Verify Stocks Details Page On Android
     Swipe By Percent  90  90  45  45  9000
     # Compare to Other section has also stocks name in different format for different stocks - it has been skipped now
     # Verify Compare With Other Section  ${e_invest_stocks_compareWithStock}  ${KU_A_invest_stocks_stk1}
-    Verify Add Fund Or Stock  ${KU_A_invest_stocks_addStocks}  ${KU_A_invest_stocks_searchStocks}
     Swipe By Percent  50  50  40  40  9000
     Verify Page Contains Element On Android  ${KU_A_invest_stocks_financials}
     Sleep  1s

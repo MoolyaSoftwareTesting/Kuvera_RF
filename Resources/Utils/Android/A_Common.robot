@@ -175,6 +175,12 @@ Replace Characters On Android
     [Arguments]  ${text}  ${char1}  ${char2}
     ${replacedString} =  Replace String  ${text}  ${char1}  ${char2}
     [Return]  ${replacedString}
-    
+
+Get Fund Or Stock Name
+    [Arguments]  ${mf_stockName}
+    ${mf_stock1} =  Replace String  ${mf_stockName}  ['  ${EMPTY}
+    ${mf_stockN} =  Replace String  ${mf_stock1}  ']  ${EMPTY}
+    [Return]  ${mf_stockN}  
+  
 Quit Kuvera Application
     Quit Application

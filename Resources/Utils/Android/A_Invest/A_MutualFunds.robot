@@ -20,46 +20,46 @@ Verify Android PreLogin MF Page
     Wait And Click Element On Android  ${KU_A_invest_MF_title}
     FOR  ${i}  IN RANGE  1  6
         # Iterate the Mutual Fund detail screen
-        ${mutualFund}  Get Json Values On Android  $.MFs.f${i}  Resources/TestData/A_MutualFunds.json 
-        Log To Console  ${mutualFund}
-        Verify Mutual Fund Details Page On Android  ${mutualFund}
+        ${mutualFundFromJson}  Get Json Values On Android  $.MutualFunds.f${i}  Resources/TestData/MutualFunds.json 
+        Log To Console  ${mutualFundFromJson}
+        ${mutualFdString} =  Convert To String  ${mutualFundFromJson}
+        ${mutualFName} =  Get Fund Or Stock Name  ${mutualFdString}
+        ${mutualFundConvertedN} =  Name Conversion Of Mutual Fund  ${mutualFdString}
+        Verify Mutual Fund Details Page On Android  ${mutualFundConvertedN}  ${mutualFName}
     END
 
-
 Verify Mutual Fund Details Page On Android
-    [Arguments]  ${mutualFund}
-    Run Keyword If  ${mutualFund} == ['${e_invest_MF_mf1}']  Wait And Click Element On Android  ${KU_A_invest_MF_dividendIcon}
-    ${mutualFund1} =  Convert To String  ${mutualFund}
-    ${mutualFund2} =  Replace String  ${mutualFund1}  ['  ${EMPTY}
-    ${mutualFundName} =  Replace String  ${mutualFund2}  ']  ${EMPTY}
+    [Arguments]  ${mutualFundConvertedN}  ${fName}
+    Run Keyword If  ${mutualFundConvertedN} == ['${e_invest_MF_mf1}']  Wait And Click Element On Android  ${KU_A_invest_MF_dividendIcon}
+    ${mutualFundName} =  Get Fund Or Stock Name  ${mutualFundConvertedN}
     Verify Search Functionality  ${mutualFundName}
-    ${text} =    Set Variable   xpath=(//*[@text=
-    ${fundName} =    Set Variable   '${mutualFundName}'])[2]
-    ${mfName} =    Set Variable   ${text}${fundName}
+    ${text} =  Set Variable  xpath=(//*[@text=
+    ${fundName} =  Set Variable  '${mutualFundName}'])[2]
+    ${mfName} =  Set Variable  ${text}${fundName}
     Verify Page Contains Element On Android  ${mfName}
     Wait And Click Element On Android  ${mfName}
-    # Since the filters are different for different funds and in android we have to go with text - it has been skipped as of now
-    # IF  ${mutualFund} == ['${e_invest_MF_mf1}']
-    #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_equityBtn}  ${KU_A_invest_MF_sectoralBtn}  ${KU_A_invest_allFundsMenu}
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf2}']  
-    #     Verify Filter Navigation For Second MF 
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf3}']  
-    #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_hybridBtn}  ${KU_A_invest_MF_aggHybridBtn}  ${KU_A_invest_allFundsMenu}
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf4}'] 
-    #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_solutionOrientedBtn}  ${KU_A_invest_MF_childrensFundBtn}  ${KU_A_invest_allFundsMenu}
-    # ELSE IF  ${mutualFund} == ['${e_invest_MF_mf5}'] 
-    #     Verify Filters For MF And Stocks  ${KU_A_invest_MF_debtBtn}  ${KU_A_invest_MF_ICICIfilter2Btn}  ${KU_A_invest_allFundsMenu}
-    # END 
+    Verify Text On Page  ${fName}
+    IF  ${mutualFundConvertedN} == ['${e_invest_MF_mf1}']
+        Verify Filters For MF And Stocks  ${KU_A_invest_MF_equityBtn}  ${KU_A_invest_MF_sectoralBtn}  ${KU_A_invest_allFundsMenu}
+    ELSE IF  ${mutualFundConvertedN} == ['${e_invest_MF_mf2}']  
+        Verify Filter Navigation For Second MF 
+    ELSE IF  ${mutualFundConvertedN} == ['${e_invest_MF_mf3}']  
+        Verify Filters For MF And Stocks  ${KU_A_invest_MF_hybridBtn}  ${KU_A_invest_MF_aggHybridBtn}  ${KU_A_invest_allFundsMenu}
+    ELSE IF  ${mutualFundConvertedN} == ['${e_invest_MF_mf4}'] 
+        Verify Filters For MF And Stocks  ${KU_A_invest_MF_solutionOrientedBtn}  ${KU_A_invest_MF_childrensFundBtn}  ${KU_A_invest_allFundsMenu}
+    ELSE IF  ${mutualFundConvertedN} == ['${e_invest_MF_mf5}'] 
+        Verify Filters For MF And Stocks  ${KU_A_invest_MF_debtBtn}  ${KU_A_invest_MF_ICICIfilter2Btn}  ${KU_A_invest_allFundsMenu}
+    END 
     Verify WatchList Button Of Invest
     Verify Period Wise Graphs  ${KU_A_invest_1MBtn}  ${KU_A_invest_6MBtn}  ${KU_A_invest_1YBtn}  ${KU_A_invest_3YBtn}  ${KU_A_invest_5YBtn}
     Verify AUM And TER info
-    Verify Invest Now Button
+    Verify Invest Now Button  ${fName}
     # Compare to Other section has also fund name in different format for different funds - it has been skipped now
     # Verify Compare With Other Section  ${e_invest_MF_compareWithOtherLabel}  ${mfName}
-    Swipe By Percent  90  90  50  50  9000
+    Swipe By Percent  90  90  45  45  9000
     Verify Add Fund Or Stock  ${KU_A_invest_MF_addFundBtn}  ${KU_A_invest_MF_searchFundLabel}
-    IF  ${mutualFund} == ['${e_invest_MF_mf3}']
-        Verify Past Performance For Third MF 
+    IF  ${mutualFundConvertedN} == ['${e_invest_MF_mf3}']
+        Verify Past Performance For Third MF
     ELSE 
         Verify Past Performance
     END
@@ -80,7 +80,9 @@ Verify AUM And TER info
     Go Back
 
 Verify Invest Now Button
+    [Arguments]  ${FName}
     Wait And Click Element On Android  ${KU_A_invest_MF_investNowBtn}
+    Verify Text On Page  ${FName}
     Verify Text On Page  ${e_invest_MF_sipAmt}
     Wait And Click Element On Android  ${KU_A_invest_MF_SIPInputField}
     Input Text  ${KU_A_invest_MF_SIPInputField}  ${e_invest_MF_sipVal}
@@ -97,7 +99,6 @@ Verify Invest Now Button
     Go Back
 
 Verify Past Performance 
-    # Past Performance
     Swipe By Percent  90  90  50  50  9000
     Wait And Click Element On Android  ${KU_A_invest_MF_pastPerformance}
     Verify Text On Page  ${e_invest_MF_pastPerformDesc}
@@ -113,8 +114,6 @@ Verify Past Performance
     Wait And Click Element On Android  ${KU_A_invest_MF_pastPerformance}
 
 Verify Past Performance For Third MF 
-    [Arguments]  ${fund}
-    # Past Performance
     Swipe By Percent  90  90  50  50  9000
     Wait And Click Element On Android  ${KU_A_invest_MF_pastPerformance}
     Verify Text On Page  ${e_invest_MF_pastPerformDesc}
@@ -126,13 +125,12 @@ Verify Past Performance For Third MF
     Verify Text On Page  ${e_invest_3Y}
     Sleep  1s
     Verify Page Contains Element On Android  ${KU_A_invest_all}
-    Verify Page Contains Element On Android  ${fund}
     Wait And Click Element On Android  ${KU_A_invest_MF_pastPerformance}
 
 Verify See Fund holdings And Other Info
-    Wait And Click Element On Android  ${KU_A_invest_MF_seeFundHoldings}
+    Wait And Click Element On Android  ${KU_A_invest_MF_fundHoldingsArrow}
     Verify Text On Page  ${e_invest_MF_topHoldings}
-    Wait And Click Element On Android  ${KU_A_invest_MF_seeFundHoldings}
+    Wait And Click Element On Android  ${KU_A_invest_MF_fundHoldingsClosingArrow}
     Verify Other information
 
 Verify Other information
@@ -160,3 +158,22 @@ Verify Filter Navigation For Second MF
     Wait And Click Element On Android  ${KU_A_invest_MF_topWatchlistedBtn}
     Verify Page Contains Element On Android  ${KU_A_invest_watchlistMenu}
     Go Back
+
+Name Conversion Of Mutual Fund
+    [Arguments]  ${mf}
+    ${containsGrowth} =  Run Keyword And Return Status  Should Contain  ${mf}  ${e_invest_MF_growthLabel}
+    IF  ${containsGrowth}  
+        ${mutualFName} =  Replace String  ${mf}  ${e_invest_MF_growthDirectPlan}  ${e_invest_MF_growthDirectPlanShort}
+    ELSE
+        ${mutualFName} =  Replace String  ${mf}  ${e_invest_MF_dividendDirectPlan}  ${e_invest_MF_dividendDirectPlanShort}  
+    END
+    ${containsPru} =  Run Keyword And Return Status  Should Contain  ${mutualFName}  ${e_invest_MF_pruLabel}
+    IF  ${containsPru} 
+        ${mutualFName} =  Replace String  ${mutualFName}  ${e_invest_MF_prudential}  ${e_invest_MF_pruLabel}
+    END
+    ${containsAsset} =  Run Keyword And Return Status  Should Contain  ${mutualFName}  ${e_invest_MF_assetLabel}
+    IF  ${containsAsset} 
+        ${mutualFName} =  Replace String  ${mutualFName}  ${e_invest_MF_assetLabel}  ${EMPTY}
+        ${mutualFName} =  Replace String Using Regexp  ${mutualFName}  ${SPACE}+  ${SPACE}
+    END
+    [Return]  ${mutualFName}
