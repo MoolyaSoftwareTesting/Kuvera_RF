@@ -57,7 +57,7 @@ Verify Mutual Fund Details Page On Android
     # Compare to Other section has also fund name in different format for different funds - it has been skipped now
     # Verify Compare With Other Section  ${e_invest_MF_compareWithOtherLabel}  ${mfName}
     Swipe By Percent  90  90  50  50  9000
-    Verify Add Fund
+    Verify Add Fund Or Stock  ${KU_A_invest_MF_addFundBtn}  ${KU_A_invest_MF_searchFundLabel}
     IF  ${mutualFund} == ['${e_invest_MF_mf3}']
         Verify Past Performance For Third MF 
     ELSE 
@@ -95,14 +95,6 @@ Verify Invest Now Button
     Wait And Click Element On Android  ${KU_A_invest_MF_addToCartBtn}
     Verify Login Page And Go Back
     Go Back
-
-Verify Add Fund
-    Swipe By Percent  50  50  40  40  9000
-    Wait And Click Element On Android  ${KU_A_invest_MF_addFundBtn}
-    Sleep  1s
-    Verify Page Contains Element On Android  ${KU_A_invest_MF_searchFundLabel} 
-    Sleep  1s
-    Wait And Click Element On Android  ${KU_A_invest_MF_closePopup}
 
 Verify Past Performance 
     # Past Performance

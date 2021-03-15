@@ -302,3 +302,12 @@ Verify Compare With Other Section
         Verify Page Contains Element On Android  ${fund_stockName} 
         Swipe By Percent  75  75  30  75  15000
     END
+
+Verify Add Fund Or Stock
+    [Arguments]  ${addFund_stockBtn}  ${serchFund_stockScreen}
+    Swipe By Percent  50  50  40  40  9000
+    Wait And Click Element On Android  ${addFund_stockBtn}
+    Sleep  1s
+    Verify Page Contains Element On Android  ${serchFund_stockScreen} 
+    Sleep  1s
+    Wait And Click Element On Android  ${KU_A_invest_MF_closePopup}

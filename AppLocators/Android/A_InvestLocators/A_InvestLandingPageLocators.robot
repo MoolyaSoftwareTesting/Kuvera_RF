@@ -18,6 +18,7 @@ ${e_invest_GF_US_BankPSU_filteredFund} =  Debt
 ${e_invest_ELSS_subTitle} =  Save up to ₹46.8k in taxes.
 ${e_invest_ETF_subTitle} =  Go global with direct US ETF investing. We make it easy and cheap.
 ${e_invest_1Y} =  1Y
+${e_invest_5Y} =  5Y
 ${e_invest_EI_subTitle} =  Get index returns at low cost.
 ${e_invest_stocks_noStocks} =  No stocks available
 
