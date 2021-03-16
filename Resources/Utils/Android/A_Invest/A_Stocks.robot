@@ -19,7 +19,7 @@ Verify Android PreLogin Stocks Page
     Go Back
     Wait And Click Element On Android  ${KU_A_invest_stocks_title}
     FOR  ${i}  IN RANGE  1  6
-        # Iterate the Mutual Fund detail screen
+        # Iterate the Stock detail screen
         ${stocksFromJson}  Get Json Values On Android  $.Stocks.f${i}  Resources/TestData/Stocks.json 
         Log To Console  ${stocksFromJson}
         Verify Stocks Details Page On Android  ${stocksFromJson}
