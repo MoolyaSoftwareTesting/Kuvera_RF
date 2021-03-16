@@ -20,24 +20,33 @@ Verify Android PreLogin Stocks Page
     Wait And Click Element On Android  ${KU_A_invest_stocks_title}
     FOR  ${i}  IN RANGE  1  6
         # Iterate the Mutual Fund detail screen
-        ${stocks}  Get Json Values On Android  $.Stocks.f${i}  Resources/TestData/Stocks.json 
-        Log To Console  ${stocks}
-        Verify Stocks Details Page On Android  ${stocks}
+        ${stocksFromJson}  Get Json Values On Android  $.Stocks.f${i}  Resources/TestData/Stocks.json 
+        Log To Console  ${stocksFromJson}
+        Verify Stocks Details Page On Android  ${stocksFromJson}
     END
 
 Verify Stocks Details Page On Android
-    [Arguments]  ${stocks}
-    ${stocks1} =  Convert To String  ${stocks}
-    ${stockName} =  Get Fund Or Stock Name  ${stocks1}
-    Verify Search Functionality  ${stocksName}
+    [Arguments]  ${stock}
+    ${stocks1} =  Convert To String  ${stock}
+    ${stockN} =  Get Fund Or Stock Name  ${stocks1}
+    Verify Search Functionality  ${stockN}
     ${text} =    Set Variable   xpath=(//*[@text=
-    ${stockName} =    Set Variable   '${stocksName}'])[2]
+    ${stockName} =    Set Variable   '${stockN}'])[2]
     ${stkName} =    Set Variable   ${text}${stockName}
     Verify Page Contains Element On Android  ${stkName}
     Wait And Click Element On Android  ${stkName}
-    Verify Text On Page  ${stockName}
-    # Since the filters are different for different stocks and in android we have to go with text - it has been skipped as of now
-    # Verify Filters For MF And Stocks  ${KU_A_invest_stocks_utilitiesBtn}  ${KU_A_invest_stocks_renewUtilityBtn}  ${KU_A_invest_allStocks}
+    Verify Text On Page  ${stockN}
+    IF  ${stock} == ['${e_invest_stocks_stocks1}']
+        Verify Filters For MF And Stocks  ${KU_A_invest_stocks_utilitiesBtn}  ${KU_A_invest_stocks_renewUtilityBtn}  ${KU_A_invest_allStocks}
+    ELSE IF  ${stock} == ['${e_invest_stocks_stocks2}']  
+        Verify Filters For MF And Stocks  ${KU_A_invest_stocks_financialBtn}  ${KU_A_invest_stocks_mortageFinanceBtn}  ${KU_A_invest_allStocks}
+    ELSE IF  ${stock} == ['${e_invest_stocks_stocks3}']  
+        Verify Filters For MF And Stocks  ${KU_A_invest_stocks_healthcareBtn}  ${KU_A_invest_stocks_biotechBtn}  ${KU_A_invest_allStocks}
+    ELSE IF  ${stock} == ['${e_invest_stocks_stocks4}'] 
+        Verify Filters For MF And Stocks  ${KU_A_invest_stocks_energyBtn}  ${KU_A_invest_stocks_oilAndGasBtn}  ${KU_A_invest_allStocks}
+    ELSE IF  ${stock} == ['${e_invest_stocks_stocks5}'] 
+        Verify Filters For MF And Stocks  ${KU_A_invest_stocks_consumerdefenBtn}  ${KU_A_invest_stocks_householdProdBtn}  ${KU_A_invest_allStocks}
+    END 
     Wait And Click Element On Android  ${KU_A_invest_buyIcon}
     Verify Login Page And Go Back 
     Verify Period Wise Graphs  ${KU_A_invest_1DBtn}  ${KU_A_invest_1WBtn}  ${KU_A_invest_3MBtn}  ${KU_A_invest_1YBtn}  ${KU_A_invest_5YBtn}
@@ -50,7 +59,6 @@ Verify Stocks Details Page On Android
     Verify Page Contains Element On Android  ${KU_A_invest_stocks_financials}
     Sleep  1s
     Go Back
-
     
 Verify Stock Values
     Verify Text On Page  ${e_invest_stocks_priceLabel}
