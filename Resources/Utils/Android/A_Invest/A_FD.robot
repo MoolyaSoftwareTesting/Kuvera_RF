@@ -14,5 +14,6 @@ Verify Android PreLogin FD Page
     Verify Page Contains Element On Android  ${KU_A_invest_FD_lessThan1Y}
     Verify Page Contains Element On Android  ${KU_A_invest_FD_1YTo3Y} 
     Verify Page Contains Element On Android  ${KU_A_invest_FD_greaterThan3Y}
+    Sleep  1s
     Verify Signup Link And Kuvera Logo
     Go Back

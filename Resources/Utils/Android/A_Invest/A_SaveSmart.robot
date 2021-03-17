@@ -8,6 +8,7 @@ Verify Android PreLogin SaveSmart Page
     Log To Console  SaveSmart
     Click On SaveSmart From Explore
     Verify Title And SubTitle Of SaveSmart
+    Sleep  1s
     Verify Signup Link And Kuvera Logo
     Verify Start SaveSmart Today  ${KU_A_invest_SS_amountField}
     Verify Login Page And Go Back 

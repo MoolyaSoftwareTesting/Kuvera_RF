@@ -72,3 +72,8 @@ MF Menu Navigation Under Invest
 Stocks Menu Navigation Under Invest
     [Tags]  TC11
     Verify Android PreLogin Stocks Page
+
+# About Page Navigation
+About Page Navigation
+    [Tags]  TC12
+    Verify Android PreLogin About Page

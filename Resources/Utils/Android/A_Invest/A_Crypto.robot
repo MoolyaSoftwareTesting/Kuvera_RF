@@ -11,5 +11,6 @@ Verify Android PreLogin Crypto Page
     Verify Page Contains Element On Android  ${KU_A_invest_crypto_imgfromExplore}
     Wait And Click Element On Android  ${KU_A_invest_crypto_title}
     Verify Text On Page  ${e_invest_crypto_allCryptoMenu}
+    Sleep  1s
     Verify Signup Link And Kuvera Logo
     

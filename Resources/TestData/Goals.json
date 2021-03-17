@@ -1,12 +1,12 @@
 {
     "Goals":{
-        "g1":"OWN A HOME",
-        "g2":"BUY A CAR",
-        "g3":"SAVE TAX",
-        "g4":"RETIRE EASY",
-        "g5":"25TH ANNIVERSARY",
-        "g6":"FOREIGN VACATION",
-        "g7":"EDUCATE MY CHILD",
-        "g8":"CREATE MY OWN"
+        "g1":"Own home",
+        "g2":"Buy car",
+        "g3":"Save tax",
+        "g4":"Retire easy",
+        "g5":"Anniversary",
+        "g6":"Vacation",
+        "g7":"Educate child",
+        "g8":"Create own"
     }
 }

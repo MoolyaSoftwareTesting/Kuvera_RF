@@ -103,6 +103,7 @@ Compare Lists
 Switch To Window Verify Title And Close
     [Arguments]  ${title}
     Switch Window  locator=NEW
+    Sleep  2s
     Run Keyword And Continue On Failure  Title Should Be  ${title}
     Close Window
     Sleep  2s

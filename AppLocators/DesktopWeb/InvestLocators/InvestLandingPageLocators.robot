@@ -2,9 +2,9 @@
 # Application Expected Values 'e_<variableName>'
 # Invest
 ${e_invest_saveSmartTitleText} =   SaveSmart
-${e_invest_saveSmartSubText} =  Invest in low risk liquid funds and redeem upto ₹2 lakhs instantly
-${e_invest_FDTitle} =  FD
-${e_invest_FDSubTitle} =  India's favorite saving instrument
+${e_invest_saveSmartSubText} =  Low risk liquid funds. Redeem up to ₹2L instantly.
+${e_invest_FDTitle} =  Fixed deposits
+${e_invest_FDSubTitle} =  Explore, compare and invest in best online FDs
 ${e_invest_giltFundsTitleText} =   Gilt funds
 ${e_invest_giltFundsSubText} =  Invest in govt bonds. Zero credit risk, but have rate risk.
 ${e_invest_ultraShortTitleText} =  Ultra-short
@@ -60,10 +60,10 @@ ${e_invest_US_stocks_defaultFilter} =  Sector
 # Application Locator 'KU_<locatorName>'
 # Invest Landing Navigation Page
 ${KU_W_investLink} =  xpath=//a[contains(text(),'Invest')]
-${KU_W_invest_saveSmartTitle} =  xpath=(//div[@class='k-cls b-invest-card']/h6)[1]
-${KU_W_invest_saveSmartSubTitle} =  xpath=(//div[@class='k-cls b-invest-card']/p)[1]
-${KU_W_FDTitle} =  xpath=//h6[contains(text(),'FD')]
-${KU_W_FDSubTitle} =  xpath=(//p[@class='b-invest-tile__para'])[2]
+${KU_W_invest_saveSmartTitle} =  xpath=//h6[contains(.,'SaveSmart')]
+${KU_W_invest_saveSmartSubTitle} =  xpath=//p[contains(text(),'Low risk liquid funds. Redeem up to ₹2L instantly.')]
+${KU_W_FDTitle} =  xpath=//h6[contains(text(),'Fixed deposits')]
+${KU_W_FDSubTitle} =  xpath=//p[contains(text(),'Explore, compare and invest in best online FDs')]
 ${KU_W_giltFundsTitle} =  xpath=(//div[@class='k-cls b-invest-card']/h6)[3]
 ${KU_W_giltFundsSubTitle} =  xpath=(//div[@class='k-cls b-invest-card']/p)[3]
 ${KU_W_ultraShortTitle} =  xpath=(//div[@class='k-cls b-invest-card']/h6)[2]
@@ -93,14 +93,14 @@ ${KU_W_52WHighUSSubTitle} =  xpath=(//div[@class='k-cls b-invest-card']/p)[9]
 ${KU_W_52WHighUS_screenText} =  xpath=//div[@class='disable-browser-text-select b-standard-tab__item b-standard-tab__item--active b-standard-tab__item--52-week-high']
 ${KU_W_healthPremiumTitle} =  xpath=//div[@class='b-invest-landing__other-container']//div[1]/p
 ${KU_W_checkPremiumBtn} =  xpath=//h6[contains(.,'Check premium')]
-${KU_W_mutualFund} =  xpath=//div[contains(text(),'MF')]
+${KU_W_mutualFund} =  xpath=//span[contains(text(),'MF')]
 ${KU_W_mutualFundScreen} =  xpath=(//div[@class='b-explore-fund__action-title'])[1]
-${KU_W_digitalGold} =  xpath=//div[contains(text(),'Digi gold')]
+${KU_W_digitalGold} =  xpath=//span[contains(text(),'Digi gold')]
 ${KU_W_digitalGoldScreen} =  xpath=(//div[@class='b-asset-cta__title'])[3]
 ${KU_W_stocks} =  xpath=(//*[contains(text(),'Stocks')])[2]
 ${KU_W_stocksScreen} =  xpath=(//div[@class='b-explore-stock__action-title'])[1]
-${KU_W_USStocks} =  xpath=//div[contains(text(),'US stocks')]  
-${KU_W_saveSmart} =  xpath=//div[contains(text(),'SaveSmart')]
+${KU_W_USStocks} =  xpath=//span[contains(text(),'US stocks')]  
+${KU_W_saveSmart} =  xpath=//span[contains(text(),'SaveSmart')]
 ${KU_W_amazonSaveScreen} =  xpath=//div[@class='b-festive-fund-no-investment__text']
 ${KU_W_invest_sortYear} =  xpath=//div[@class='default-message']
 ${KU_W_stockAnd52WIndia_searchBar} =  xpath=(//div[@class='b-explore-stock__action-title'])[1]

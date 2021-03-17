@@ -11,6 +11,7 @@ Verify Android PreLogin Digi Gold Page
     Verify Page Contains Element On Android  ${KU_A_invest_DG_title}
     Wait And Click Element On Android  ${KU_A_invest_DG_title}
     Verify Text On Page  ${e_gold_screenTitle}
+    Sleep  1s
     Verify Signup Link And Kuvera Logo
     # Sell
     Log To Console  Sell

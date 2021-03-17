@@ -26,6 +26,7 @@ Verify Android PreLogin Signup Page Widgets
     Verify Text On Page  ${e_ORLabel}
     Verify Page Contains Element On Android  ${KU_A_signupGoogleBtn}
     Verify Page Contains Element On Android  ${KU_A_signupFBBtn}
+    Wait And Click Element On Android  ${KU_A_logo}
 
 
 

@@ -46,7 +46,7 @@ PreLogin Feature Sub Header Navigation On Android
     Run keyword If  ['${e_manageAccountPage}'] == ${manageAccount}  Verify Android PreLogin Manage Account Page
     Run keyword If  ['${e_taxHarvestingPage}'] == ${taxHarvesting}  Verify Android PreLogin Tax Harvesting Page
     Run keyword If  ['${e_saveTaxesPage}'] == ${savesTaxes}  Verify Android PreLogin Save Taxes Page
-    Run keyword If  ['${e_consolidatePage}'] == ${consolidate}  Log To Console  Pending
+    Run keyword If  ['${e_consolidatePage}'] == ${consolidate}  Verify Android PreLogin Consolidate Page
     ...    ELSE  Log To Console  Completed
      
 

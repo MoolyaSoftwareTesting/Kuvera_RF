@@ -86,7 +86,7 @@ ${e_insure_yellowBanner} =  cover starting at\n*\nT&C apply
 # Remit List 
 @{e_remit_whyTransferWiseList} =  No hidden fees  Up to 8x cheaper than banks  Trusted by 7 million users  Fast way to send money  Mid-market exchange rate
 # Remit Navigation Page Variables
-${e_remit_screenTitleDesc} =  Now invest easily through Kuvera, or send money to your loved ones. With our partner TransferWise, you can transfer money to India for the lowest-cost. It is simple and faster than any traditional provider.
+${e_remit_screenTitleDesc} =  Now invest easily through Kuvera, or send money to your loved ones. With our partner "Wise, formerly Transferwise", you can transfer money to India for the lowest-cost. It is simple and faster than any traditional provider.
 ${e_remit_transferNowBtn} =  Transer now
 ${e_remit_transferWiseCross-borderTitle} =  Making cross-border investments with Kuvera seamless and easy | Wise - Wise
 ${e_remit_transferWiseSignUpTitle} =  TransferWise - Create account
@@ -378,18 +378,18 @@ ${KU_W_featureSubList} =  xpath=//div[@class='b-header__sub-content']/div/a
 
 # Feature - Set a Goal
 ${KU_W_feature_setAGoalLink} =  xpath=//a[contains(text(),'Set a Goal')]
-${KU_W_feature_goalsList} =  xpath=//*[@class='cards']/a/p
-${KU_W_feature_sg_screenTitle} =  xpath=//h2[contains(text(),'SET YOUR GOAL')]
-${KU_W_feature_sg_screenSubTitle} =  xpath=//*[@class='goals-index col-sm-4']/h1
-${KU_W_feature_sg_content} =  xpath=//p[@class='hidden-xs']
-${KU_W_feature_sg_ownAHome} =  xpath=//p[contains(text(),'own a home')]
-${KU_W_feature_sg_buyACar} =  xpath=//p[contains(text(),'buy a car')]
-${KU_W_feature_sg_saveTax} =  xpath=//p[contains(text(),'save tax')]
-${KU_W_feature_sg_retireEasy} =  xpath=//p[contains(text(),'retire easy')]
-${KU_W_feature_sg_25thAnniversary} =  xpath=//p[contains(text(),'25th Anniversary')]
-${KU_W_feature_sg_foreignVacation} =  xpath=//*[@class="card set-goal-vacation"]
-${KU_W_feature_sg_educateMyChild} =  xpath=//p[contains(text(),'educate my child')]
-${KU_W_feature_sg_createMyOwn} =  xpath=//p[contains(text(),'create my own')]
+${KU_W_feature_goalsList} =  xpath=//div[@class='b-flat-card b-more-goals-options__goal']//div[2]
+${KU_W_feature_sg_screenTitle} =  xpath=//div[contains(text(),'Set your goal')]
+${KU_W_feature_sg_screenSubTitle} =  xpath=//div[@class='k-ui__para--standard b-more-goal-list__about-subheading']
+${KU_W_feature_sg_content} =  xpath=//div[@class='k-ui__para--light b-more-goal-list__about-details']
+${KU_W_feature_sg_ownAHome} =  xpath=//div[contains(text(),'Own home')]
+${KU_W_feature_sg_buyACar} =  xpath=//div[contains(text(),'Buy car')]
+${KU_W_feature_sg_saveTax} =  xpath=//div[contains(text(),'Save tax')]
+${KU_W_feature_sg_retireEasy} =  xpath=//div[contains(text(),'Retire easy')]
+${KU_W_feature_sg_25thAnniversary} =  xpath=//div[contains(text(),'Anniversary')]
+${KU_W_feature_sg_foreignVacation} =  xpath=//div[contains(text(),'Vacation')]
+${KU_W_feature_sg_educateMyChild} =  xpath=//div[contains(text(),'Educate child')]
+${KU_W_feature_sg_createMyOwn} =  xpath=//div[contains(text(),'Create own')]
 ${KU_W_feature_sg_questionScreen} =  id=title-box
 ${KU_W_feature_sg_titleBoxSection} =  id=p9e7d2f05349193e9421e568b092da688e5010650-container
 ${KU_W_feature_sg_Q_goalName} =  xpath=//*[@id="title-box"]/h2
