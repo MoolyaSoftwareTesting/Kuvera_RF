@@ -311,3 +311,36 @@ Verify Add Fund Or Stock
     Verify Page Contains Element On Android  ${serchFund_stockScreen} 
     Sleep  1s
     Wait And Click Element On Android  ${KU_A_invest_MF_closePopup}
+
+Verify Share PDF And Watchlist Icon
+    Wait And Click Element On Android  ${KU_A_invest_socialSharingIcon}
+    Verify Page Contains Element On Android  ${KU_A_invest_fbIcon}
+    Verify Page Contains Element On Android  ${KU_A_invest_twitterIcon}
+    Verify Page Contains Element On Android  ${KU_A_invest_whatsappIcon}
+    Verify Page Contains Element On Android  ${KU_A_invest_telegramIcon}
+    Verify Page Contains Element On Android  ${KU_A_invest_emailIcon}
+    Verify Page Contains Element On Android  ${KU_A_invest_copyLink}
+    Wait And Click Element On Android  ${KU_A_invest_socialSharingIcon}
+    # Download option is not visible even after 90 secs
+    # Wait And Click Element On Android  ${KU_A_invest_pdfIcon}
+    # Wait Until Element Is Visible  ${KU_A_invest_downloadIcon}  timeout=90
+    # Verify Page Contains Element On Android  ${KU_A_invest_downloadIcon}
+    # Go Back
+    Wait And Click Element On Android  ${KU_A_watchListBtn}
+    Verify Login Page And Go Back 
+
+Verify Buy Icon
+    Wait And Click Element On Android  ${KU_A_invest_buyIcon}
+    Verify Login Page And Go Back    
+
+Verify Common Stock And US Stock Values
+    Verify Text On Page  ${e_invest_stocks_todaysHighLabel}
+    Verify Text On Page  ${e_invest_stocks_todaysLowLabel}
+    Verify Text On Page  ${e_invest_stocks_52WHighLabel}
+    Verify Text On Page  ${e_invest_stocks_52WLowLabel}
+    Verify Text On Page  ${e_invest_stocks_PELabel}
+    Verify Text On Page  ${e_invest_1Y}
+    Verify Text On Page  ${e_invest_stocks_EPS(TTM)Label}
+    Verify Text On Page  ${e_invest_stocks_marketCapLabel} 
+    Verify Text On Page  ${e_invest_stocks_volumeLabel}
+    Verify Text On Page  ${e_invest_5Y} 

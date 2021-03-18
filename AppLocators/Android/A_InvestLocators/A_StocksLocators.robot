@@ -5,7 +5,6 @@ ${e_invest_stocks_stocks2} =  Housing Development Finance Corp Ltd
 ${e_invest_stocks_stocks3} =  Biocon Ltd
 ${e_invest_stocks_stocks4} =  Reliance Industries Ltd
 ${e_invest_stocks_stocks5} =  Marico Ltd
-${e_invest_stocks_compareWithStock} =  Compare with other stock
 ${e_invest_stocks_priceLabel} =  Price
 ${e_invest_stocks_todaysHighLabel} =  Today’s high
 ${e_invest_stocks_todaysLowLabel} =  Today’s low
@@ -25,7 +24,6 @@ ${KU_A_invest_stocks_title} =  xpath=//*[@text='Stocks']
 ${KU_A_invest_stocks_stock1} =  xpath=//*[@text='Adani Green Energy Ltd']
 ${KU_A_invest_stocks_utilitiesBtn} =  xpath=//*[@text='Utilities']
 ${KU_A_invest_stocks_renewUtilityBtn} =  xpath=//*[@text='Utilities - Renewable']
-${KU_A_invest_stocks_healthcareBtn} =  xpath=//*[@text='Healthcare']
 ${KU_A_invest_stocks_biotechBtn} =  xpath=//*[@text='Biotechnology']
 ${KU_A_invest_stocks_consumerdefenBtn} =  xpath=//*[@text='Consumer Defensive']
 ${KU_A_invest_stocks_householdProdBtn} =  xpath=//*[@text='Household & Personal Products']
@@ -36,6 +34,4 @@ ${KU_A_invest_stocks_mortageFinanceBtn} =  xpath=//*[@text='Mortgage Finance']
 ${KU_A_invest_stocks_buyBtn} =  xpath=//*[@text='Buy']
 ${KU_A_invest_stocks_stk1} =  xpath=//*[contains(text(),'ADANIGREEN')]
 ${KU_A_invest_stocks_stocks4} =  xpath=//*[@text='LIC stocks Childrens (G)']
-${KU_A_invest_stocks_addStocks} =  xpath=//*[@text='Add']
-${KU_A_invest_stocks_searchStocks} =  xpath=//*[@text='Search and add stock']
 ${KU_A_invest_stocks_financials} =  xpath=//*[@text='Financials']

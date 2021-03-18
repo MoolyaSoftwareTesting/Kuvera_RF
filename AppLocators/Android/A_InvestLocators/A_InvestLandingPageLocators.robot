@@ -3,7 +3,7 @@
 ${e_invest_link} =  Invest
 ${e_invest_lowRisk} =  Low risk
 ${e_invest_highRisk} =  High risk
-${e_invest_SS_subTitle} =  Invest in low risk liquid funds and redeem upto ₹2 lakhs instantly
+${e_invest_SS_subTitle} =  Low risk liquid funds. Redeem up to ₹2L instantly.
 ${e_invest_explore} =  Explore
 ${e_invest_growth} =  Growth
 ${e_invest_dividend} =  Dividend
@@ -21,6 +21,7 @@ ${e_invest_1Y} =  1Y
 ${e_invest_5Y} =  5Y
 ${e_invest_EI_subTitle} =  Get index returns at low cost.
 ${e_invest_stocks_noStocks} =  No stocks available
+${e_invest_compareWithStock} =  Compare with other stock
 
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_link} =  xpath=//*[@text='Invest']
@@ -74,8 +75,8 @@ ${KU_A_invest_52WkUS_tilesTitle} =  xpath=//*[@text='52 wk high US']
 ${KU_A_invest_52WkUS_subTitle} =  xpath=//*[@text='Momentum stocks in US']
 ${KU_A_invest_ETFMenu} =  xpath=//*[@text='ETF']
 ${KU_A_invest_BankPSU_tilesTitle} =  xpath=//*[@text='Bank & PSU bonds']
-${KU_A_invest_FD_tilesTitle} =  xpath=//*[@text='FD']
-${KU_A_invest_FD_subTitle} =  xpath=//*[@text=concat('India', "'", 's favorite saving instrument')]
+${KU_A_invest_FD_tilesTitle} =  xpath=//*[@text='Fixed deposits']
+${KU_A_invest_FD_subTitle} =  xpath=//*[@text='Explore, compare and invest in best online FDs']
 ${KU_A_invest_crypto_title} =  xpath=//*[@text='Crypto']
 ${KU_A_invest_crypto_subTitle} =  xpath=//*[@text='BTC, ETH et al. Join the crypto revolution']
 ${KU_A_invest_digiGold_imgIcon} =  xpath=//*[@text='digital-gold']
@@ -103,3 +104,15 @@ ${KU_A_invest_descArrow4} =  xpath=(//*[@text='table-desc'])[4]
 ${KU_A_invest_stocks_allStocksLink} =  xpath=//*[@text='Go to ‘All stocks’']
 ${KU_A_invest_searchIcon} =  xpath=//*[@text='search-icon-active']
 ${KU_A_invest_buyIcon} =  xpath=//*[@text='Buy']
+${KU_A_invest_socialSharingIcon} =  xpath=//*[@text='share']
+${KU_A_invest_fbIcon} =  xpath=//*[@text='facebook-new']
+${KU_A_invest_twitterIcon} =  xpath=//*[@text='twitter-new']
+${KU_A_invest_whatsappIcon} =  xpath=//*[@text='whatsapp-new']
+${KU_A_invest_telegramIcon} =  xpath=//*[@text='telegram-new']
+${KU_A_invest_emailIcon} =  xpath=//*[@text='email-share']
+${KU_A_invest_copyLink} =  xpath=//*[@text='copy-link']
+${KU_A_invest_pdfIcon} =  xpath=//*[@text='download-pdf']
+${KU_A_invest_downloadIcon} =  xpath=//*[@resource-id='com.android.chrome:id/button_primary']
+${KU_A_invest_USAndstocks_addStocks} =  xpath=//*[@text='Add']
+${KU_A_invest_USAndstocks_searchStocks} =  xpath=//*[@text='Search and add stock']
+${KU_A_invest_USAndstocks_healthcareBtn} =  xpath=//*[@text='Healthcare']

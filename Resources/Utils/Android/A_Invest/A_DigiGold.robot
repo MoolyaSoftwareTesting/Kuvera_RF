@@ -36,7 +36,7 @@ Verify Android PreLogin Digi Gold Page
     Verify Login Page And Go Back
     # The Kuvera Advantage
     Verify Kuvera Advantage
-    Open Bot And Validate Question On Android  ${KU_A_invest_DG_botQuestion1}
+    Verify Presence Of Bot Button  ${KU_A_faqBotBtn} 
 
 Verify Sell Gold Details
     Wait And Click Element On Android  ${KU_A_invest_DG_sellIcon}

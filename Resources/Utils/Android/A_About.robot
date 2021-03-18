@@ -20,6 +20,7 @@ Verify Android PreLogin About Page
     # Meet The Team
     Verify Text On Page  ${e_about_meetTheTeamTitle}
     Verify Page Contains Element On Android  ${KU_A_about_img1}
+    # Founder Position 
     Verify Text On Page  ${e_about_founder1}
     Verify Text On Page  ${e_about_founder1Position}
     Verify Text On Page  ${e_about_founder1Background}

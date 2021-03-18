@@ -22,6 +22,7 @@ Resource   ../../../AppLocators/Android/A_InvestLocators/A_DigiGoldLocators.robo
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_BankPSUBondsLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_MFLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_StocksLocators.robot
+Resource   ../../../AppLocators/Android/A_InvestLocators/A_USStocksLocators.robot
 
 *** Keywords ***
 
