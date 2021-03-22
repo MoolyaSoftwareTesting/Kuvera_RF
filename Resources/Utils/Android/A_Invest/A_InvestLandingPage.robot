@@ -11,7 +11,6 @@ Verify Android PreLogin Invest Tiles
     Verify Text On Page  ${e_invest_highRisk}
     Verify Signup Link And Kuvera Logo
     # SaveSmart
-    Verify Page Contains Element On Android  ${KU_A_invest_saveSmartImg}
     Verify Page Contains Element On Android  ${KU_A_invest_SS_tilesTitle}
     Verify Text On Page  ${e_invest_SS_subTitle}
     Log To Console  SaveSmart
@@ -19,6 +18,7 @@ Verify Android PreLogin Invest Tiles
     Verify Title And SubTitle Of SaveSmart
     Go Back
     # FD
+    Verify Page Contains Element On Android  ${KU_A_invest_FDImg}
     Verify Page Contains Element On Android  ${KU_A_invest_FD_tilesTitle}
     Verify Page Contains Element On Android  ${KU_A_invest_FD_subTitle}
     Log To Console  FD 
@@ -321,7 +321,7 @@ Verify Share PDF And Watchlist Icon
     Verify Page Contains Element On Android  ${KU_A_invest_emailIcon}
     Verify Page Contains Element On Android  ${KU_A_invest_copyLink}
     Wait And Click Element On Android  ${KU_A_invest_socialSharingIcon}
-    # Download option is not visible even after 90 secs
+    # Download option is not appearing in automation even after 90 secs
     # Wait And Click Element On Android  ${KU_A_invest_pdfIcon}
     # Wait Until Element Is Visible  ${KU_A_invest_downloadIcon}  timeout=90
     # Verify Page Contains Element On Android  ${KU_A_invest_downloadIcon}

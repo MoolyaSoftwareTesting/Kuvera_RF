@@ -27,6 +27,7 @@ Header Navigation Verification on Android
     [Tags]  TC02
     PreLogin Header Navigation On Android
     
+    
 # All Menu Navigation under Features
 Features Header Navigation Verification on Android
     [Tags]  TC03
@@ -82,3 +83,8 @@ US Stocks Menu Navigation Under Invest
 About Page Navigation
     [Tags]  TC13
     Verify Android PreLogin About Page
+
+# Blog Page Navigation
+Blog Page Navigation
+    [Tags]  TC14
+    Verify Android PreLogin Blog Page

@@ -34,3 +34,4 @@ Resource    ../../Resources/Utils/Android/A_Invest/A_USStocks.robot
 Resource    ../../Resources/Utils/Android/A_Login.robot
 Resource    ../../Resources/Utils/Android/A_Signup.robot
 Resource    ../../Resources/Utils/Android/A_About.robot
+Resource    ../../Resources/Utils/Android/A_Blog.robot

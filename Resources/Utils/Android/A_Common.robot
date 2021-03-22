@@ -7,6 +7,7 @@ Library     String
 Resource   ../../../AppLocators/Android/A_CommonAppLocators.robot
 Resource   ../../../AppLocators/Android/A_MenuNavigationLocators.robot
 Resource   ../../../AppLocators/Android/A_AboutLocators.robot
+Resource   ../../../AppLocators/Android/A_BlogLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_InvestLandingPageLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_SaveSmartLocators.robot
 Resource   ../../../AppLocators/Android/A_InvestLocators/A_GiltFundsLocators.robot

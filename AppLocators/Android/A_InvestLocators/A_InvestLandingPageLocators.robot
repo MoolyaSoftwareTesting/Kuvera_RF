@@ -26,7 +26,7 @@ ${e_invest_compareWithStock} =  Compare with other stock
 # Application Locator 'KU_<locatorName>'
 ${KU_A_invest_link} =  xpath=//*[@text='Invest']
 ${KU_A_invest_all} =  xpath=//*[@text='ALL']
-${KU_A_invest_saveSmartImg} =  xpath=//*[@text='savesmart']
+${KU_A_invest_FDImg} =  xpath=//*[@text='fd-shield']
 ${KU_A_invest_SS_tilesTitle} =  xpath=//*[@text='SaveSmart']
 ${KU_A_invest_SS_screenSubTitle} =  xpath=//*[@text='Liquid fund returns, higher instant withdrawal\n(upto ₹2 lakhs or 90% of holdings within 30 min)']
 ${KU_A_invest_GF_title} =  xpath=//*[@text='Gilt funds']

@@ -47,7 +47,7 @@ ${e_insure_cashExpensesDesc} =  Get up to ₹10k a day to cover out of pocket ex
 ${e_insure_support} =  Dedicated support
 ${e_insure_supportDesc} =  Get year-round dedicated support.
 # Loans
-${e_loansLink} =  Loans
+${e_loansLink} =  Loan
 ${e_loansTitle} =  Get an instant loan backed by your portfolio
 ${e_loansSubTitle} =  Let your investments work for you. The only loan account you'll ever need.
 ${e_loans_eligibilityBtn} =  Check your eligibility
@@ -70,7 +70,6 @@ ${e_loans_highlyFlexibleSubTitle} =  Repay your outstanding loan, in full or in 
 # Remit
 ${e_remitLink} =  Remit
 ${e_remitTitle} =  A cheaper & faster way to send money home
-${e_remitSubTitle} =  Now invest easily through Kuvera, or send money to your loved ones. With our partner TransferWise, you can transfer money to India for the lowest-cost. It is simple and faster than any traditional provider.
 ${e_remit_tansferwiseScreenTitle} =  A cheaper, smarter alternative to international bank transfers.
 ${e_remit_whyTransferWise} =  Why TransferWise?
 ${e_remit_transferWisePoint1} =  No hidden fees
@@ -83,7 +82,7 @@ ${e_remit_bannerTitle} =  Win ₹1,000 digital gold on your first transfer.
 
 # Features- Set A Goal
 ${e_featureLink} =  Features
-${e_feature_SG_screenTitle} =  SET YOUR GOAL
+${e_feature_SG_screenTitle} =  Set your goal
 ${e_feature_SG_screenSubTitle} =  We'll help you bring your dreams to life.
 ${e_feature_SG_username} =  Test
 ${e_feature_SG_age} =  27
@@ -194,7 +193,7 @@ ${KU_A_insure_everythingUNeed} =  xpath=//android.view.View[@text='Everything yo
 ${KU_A_insure_gotYouCovered} =  xpath=//*[@text='We’ve got you covered']
 
 # Loans
-${KU_A_loansLink} =  xpath=//*[@text='Loans']
+${KU_A_loansLink} =  xpath=//*[@text='Loan']
 ${KU_A_loansTitle} =  xpath=//*[@text='Get an instant loan backed by your portfolio']
 ${KU_A_loansSubTitle} =  xpath=//*[@text=concat('Let your investments work for you. The only loan account you', "'", 'll ever need.')]
 ${KU_A_loans_imgIcon} =  xpath=//*[@text='las-landing']
@@ -226,17 +225,17 @@ ${KU_A_loans_portfolioIntVal} =  xpath=//*[@text='10.50%']
 # Remit
 ${KU_A_remitLink} =  xpath=//*[@text='Remit']
 ${KU_A_remitTitle} =  xpath=//*[@text='A cheaper & faster way to send money home']
-${KU_A_remitSubTitle} =  xpath=//*[@text='Now invest easily through Kuvera, or send money to your loved ones. With our partner TransferWise, you can transfer money to India for the lowest-cost. It is simple and faster than any traditional provider.']
+${KU_A_remitSubTitle} =  xpath=//*[@text=concat('Now invest easily through Kuvera, or send money to your loved ones. With our partner ', '"', 'Wise, formerly Transferwise', '"', ', you can transfer money to India for the lowest-cost. It is simple and faster than any traditional provider.')]
 ${KU_A_remit_imgIcon} =  xpath=(//*[@class='android.widget.Image'])[3]
 ${KU_A_remit_kuveraLogoImg} =  xpath=(//*[@text='kuvera-logo-dark'])[2]
-${KU_A_remit_transferwiseImg} =  xpath=//*[@text='transferwise-logo']
+${KU_A_remit_transferwiseImg} =  xpath=//*[@text='transferwise-logo-new']
 ${KU_A_remit_transferNowBtn} =  xpath=//*[@text='Transfer now']
 ${KU_A_remit_sendMoneyBtn} =  xpath=//*[@text='Send money']
 ${KU_A_remit_conitnueBtn} =  xpath=//*[@text='Continue']
 ${KU_A_remit_nextStepsTitle} =  xpath=//*[@text='Next steps']
 ${KU_A_remit_nextStepsSubTitle} =  xpath=//*[@text='Transfer online in under 5 minutes.']
 ${KU_A_remit_step1} =  xpath=//*[@text='Step 1']
-${KU_A_remit_step1Desc} =  xpath=//*[@text='Register with Transferwise. It is required by regulation.']
+${KU_A_remit_step1Desc} =  xpath=//*[@text='Register with Wise. It is required by regulation.']
 ${KU_A_remit_step2} =  xpath=//*[@text='Step 2']
 ${KU_A_remit_step2Desc} =  xpath=//*[@text='Enter your transfer amount']
 ${KU_A_remit_step3} =  xpath=//*[@text='Step 3']
