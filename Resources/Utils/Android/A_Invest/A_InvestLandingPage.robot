@@ -230,6 +230,7 @@ Verify Navigation To Tabs For Stocks
     ELSE
         Wait And Click Element On Android  ${KU_A_invest_stocks_allStocksLink}
         Verify Watchlist For 52Wk Low
+        Go Back
     END
     
 

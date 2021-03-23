@@ -43,7 +43,6 @@ ${KU_W_invest_stocks_shareIcon} =  xpath=//div[@class='b-stocks-basic-info__shar
 ${KU_W_invest_stocks_pdfIcon} =  xpath=(//img[@class='b-stocks-basic-info__action-icons'])[3]
 ${KU_W_invest_stocks_watchlistIcon} =  xpath=(//img[@class='b-stocks-basic-info__action-icons'])[4]
 ${KU_W_invest_stocks_buyStocksBtn} =  xpath=//div[@class='b-stocks-widget__content--button']
-${KU_W_invest_stocks_performanceChart} =  xpath=(//div[@class='highcharts-container '])[1]
 ${KU_W_invest_stocks_periodList} =  xpath=(//div[contains(@class,'b-period-option_item')])
 ${KU_W_invest_stocksDetails_stockName} =  xpath=//div[@class='b-stocks-basic-info__header--name']
 ${KU_W_invest_stocks_incomeStatement} =  xpath=//div[contains(text(),'Income statement')]

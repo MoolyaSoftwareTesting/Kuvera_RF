@@ -218,7 +218,7 @@ Verify US Stocks Details Screen
     # FAQ
     Verify Presence Of FAQBOT Icon
     # Graph Section
-    Verify Performance Chart For Stocks And US Stocks  ${KU_W_invest_USStocks_performanceChart}
+    Verify Performance Chart For Stocks And Crypto  ${KU_W_invest_USStocks_performanceChart}
     # Live Market Hours is pending
     # Compare with other Stocks
     Verify Compare With Other

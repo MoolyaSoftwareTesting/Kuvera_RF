@@ -81,7 +81,12 @@ Verify PreLogin Invest Tiles
     Wait For Element Visibility  ${KU_W_cryptoTitle}
     Verify Element And Text  ${KU_W_cryptoTitle}  ${e_invest_cryptoTitleText} 
     Verify Element And Text  ${KU_W_cryptoSubTitle}  ${e_invest_cryptoSubTitleText}
-    Verify PreLogin Crypto Landing Page
+    Wait And Click  ${KU_W_cryptoTitle}
+    Log To Console  Crypto Tiles
+    Sleep  2s
+    Verify Page Contains Element  ${KU_W_crypto_tabName}
+    Verify Login And Signup Link
+    Go Back
     # 52 W High India
     Wait For Element Visibility  ${KU_W_52WHighIndiaTitle}  
     Verify Element And Text  ${KU_W_52WHighIndiaTitle}  ${e_invest_52WHighIndiaTitleText} 
@@ -264,7 +269,7 @@ Verify Explore Tags For Stocks And USStocks
     Verify Element And Text  ${sortYear}  ${e_invest_stocks_sortYear}
     Go Back
 
-Verify Performance Chart For Stocks And US Stocks
+Verify Performance Chart For Stocks And Crypto
     [Arguments]  ${performanceChart}
     Wait For Element Visibility  ${performanceChart} 
     Verify Page Contains Element  ${performanceChart}
